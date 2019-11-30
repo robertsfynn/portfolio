@@ -3,25 +3,98 @@
   margin: auto;
 }
 
+main {
+  margin-top: 50px;
+}
+
 body {
   background-color: #07011e;
 }
 
-h1 {
+h1,
+.Typewriter span {
   font-family: Louis George Cafe;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
   line-height: 40.8px;
   letter-spacing: -1.5px;
-  text-align: center;
   color: #ffffff;
+  margin: 0;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
-  h1 {
+  h1,
+  .Typewriter span {
     font-size: 60px;
     line-height: 69px;
     letter-spacing: -1.5px;
   }
+}
+
+h2 {
+  font-family: Louis George Cafe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 40.8px;
+  letter-spacing: -1.5px;
+  color: #ffffff;
+}
+
+h6 {
+  font-family: Louis George Cafe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.Typewriter {
+  text-align: center;
+}
+
+.hero-header {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.social-media {
+  display: flex;
+  justify-content: center;
+}
+
+.social-media__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 3px;
+  border: solid 1px #4a4a4a;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-right: 5px;
+}
+
+.social-media__item a {
+  font-size: 20px;
+  margin-right: 5px;
+  font-family: "Louis George Cafe";
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0;
+}
+
+.social-media__item:hover {
+  box-shadow: 0 16px 14px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ff4952;
+  border: solid 1px transparent;
+  color: #ffffff;
+}
+
+.social-media-container {
+  margin-top: 20px;
 }

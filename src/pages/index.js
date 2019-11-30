@@ -1,12 +1,11 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Hero from "../components/Hero/Hero"
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hello, I'm Fynn Roberts</h1>
+    <Hero></Hero>
   </Layout>
 )
 
