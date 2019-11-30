@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Container } from "react-grid-system"
 
 import "./layout.css"
 import "./style.css"
@@ -27,7 +28,7 @@ const Layout = ({ children }) => {
     <>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
       <main>
-        <div className="container">{children}</div>
+        <Container>{children}</Container>
       </main>
       <footer></footer>
     </>

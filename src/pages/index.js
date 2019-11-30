@@ -2,10 +2,12 @@ import React from "react"
 
 import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
+import Portfolio from "../components/Portfolio/Portfolio"
 
 const IndexPage = () => (
   <Layout>
-    <Hero></Hero>
+    <Hero />
+    <Portfolio />
   </Layout>
 )
 
