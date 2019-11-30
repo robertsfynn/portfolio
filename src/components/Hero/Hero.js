@@ -2,7 +2,7 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
-import { Header1, Header6 } from "../Text/Headers"
+import { Header1, Header6 } from "../Text/Text"
 
 const SocialMedia = styled.div`
   display: flex;
