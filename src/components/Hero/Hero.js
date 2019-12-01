@@ -38,7 +38,7 @@ const SocialMediaItem = styled.div`
 `
 
 const Hero = () => (
-  <Fade bottom>
+  <div data-sal="slide-up" data-sal-duration="1000">
     <Header1>Hello, I’m Fynn Roberts</Header1>
     <Typewriter
       options={{
@@ -57,7 +57,7 @@ const Hero = () => (
         <a href="">in</a>
       </SocialMediaItem>
     </SocialMedia>
-  </Fade>
+  </div>
 )
 
 export default Hero
