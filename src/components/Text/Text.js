@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Header1 = styled.h1`
-  font-family: Louis George Cafe;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -13,7 +13,7 @@ export const Header1 = styled.h1`
 `
 
 export const Header2 = styled.h2`
-  font-family: Louis George Cafe;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 34px;
@@ -23,7 +23,7 @@ export const Header2 = styled.h2`
 `
 
 export const Header5 = styled.h5`
-  font-family: Louis George Cafe;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 25px;
@@ -33,7 +33,7 @@ export const Header5 = styled.h5`
 `
 
 export const Header6 = styled.h6`
-  font-family: Louis George Cafe;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -44,7 +44,7 @@ export const Header6 = styled.h6`
 `
 
 export const Paragraph = styled.p`
-  font-family: Louis George Cafe;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.88;
   color: #ffffff;

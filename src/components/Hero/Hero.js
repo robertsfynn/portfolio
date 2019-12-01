@@ -30,7 +30,7 @@ const SocialMediaItem = styled.div`
   a {
     font-size: 20px;
     margin-right: 5px;
-    font-family: "Louis George Cafe";
+    font-family: Roboto, sans-serif;
     color: #ffffff;
     text-decoration: none;
     margin: 0;

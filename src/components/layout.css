@@ -1,16 +1,5 @@
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("../../fonts/LouisGeorgeCafe.ttf");
-}
-
-@font-face {
-  font-family: "Louis George Cafe";
-  src: url("../../fonts/LouisGeorgeCafeBold.ttf");
-  font-weight: bold;
-}
-
 html {
-  font-family: "Louis George Cafe", sans-serif;
+  font-family: Roboto, sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
