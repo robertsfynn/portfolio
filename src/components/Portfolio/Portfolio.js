@@ -6,7 +6,7 @@ import PortfolioItem from "./PortfolioItem"
 
 const Portfolio = () => {
   return (
-    <Row style={{ marginTop: 500 }}>
+    <Row style={{ marginTop: 1000 }}>
       <Col md={5}>
         <PortfolioItem image={mobileImage} item={1} />
       </Col>
