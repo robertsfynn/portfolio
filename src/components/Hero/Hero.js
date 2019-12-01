@@ -2,6 +2,7 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import Fade from "react-reveal/Fade"
 import styled from "styled-components"
+import { useSpring, animated } from "react-spring"
 
 import { Header1, Header6 } from "../Text/Text"
 
@@ -38,27 +39,36 @@ const SocialMediaItem = styled.div`
   }
 `
 
-const Hero = () => (
-  <Fade bottom>
-    <Header1>Hello, I’m Fynn Roberts</Header1>
-    <Typewriter
-      options={{
-        strings: ["Student", "Web Developer", "Mobile Developer"],
-        autoStart: true,
-        loop: true,
-        delay: 100,
-      }}
-    />
-    <Header6 marginTop={20}>Follow me on</Header6>
-    <SocialMedia>
-      <SocialMediaItem>
-        <a href="">Tw</a>
-      </SocialMediaItem>
-      <SocialMediaItem>
-        <a href="">in</a>
-      </SocialMediaItem>
-    </SocialMedia>
-  </Fade>
-)
+const Hero = () => {
+  const props = useSpring({
+    config: { duration: 2000 },
+    opacity: 1,
+    from: { opacity: 0 },
+  })
+
+  return (
+    <animated.div style={props}>
+      I will fade in
+      <Header1>Hello, I’m Fynn Roberts</Header1>
+      <Typewriter
+        options={{
+          strings: ["Student", "Web Developer", "Mobile Developer"],
+          autoStart: true,
+          loop: true,
+          delay: 100,
+        }}
+      />
+      <Header6 marginTop={20}>Follow me on</Header6>
+      <SocialMedia>
+        <SocialMediaItem>
+          <a href="">Tw</a>
+        </SocialMediaItem>
+        <SocialMediaItem>
+          <a href="">in</a>
+        </SocialMediaItem>
+      </SocialMedia>
+    </animated.div>
+  )
+}
 
 export default Hero
