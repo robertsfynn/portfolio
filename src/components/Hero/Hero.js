@@ -1,7 +1,8 @@
 import React from "react"
-import Fade from "react-reveal/Fade"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
+import Fade from "react-reveal/Fade"
+
 import { Header1, Header6 } from "../Text/Text"
 
 const SocialMedia = styled.div`
@@ -38,7 +39,7 @@ const SocialMediaItem = styled.div`
 `
 
 const Hero = () => (
-  <div data-sal="slide-up" data-sal-duration="1000">
+  <Fade bottom>
     <Header1>Hello, I’m Fynn Roberts</Header1>
     <Typewriter
       options={{
@@ -57,7 +58,7 @@ const Hero = () => (
         <a href="">in</a>
       </SocialMediaItem>
     </SocialMedia>
-  </div>
+  </Fade>
 )
 
 export default Hero
