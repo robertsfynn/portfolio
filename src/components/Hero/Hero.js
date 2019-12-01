@@ -1,7 +1,7 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
-import styled from "styled-components"
 import Fade from "react-reveal/Fade"
+import styled from "styled-components"
 
 import { Header1, Header6 } from "../Text/Text"
 
