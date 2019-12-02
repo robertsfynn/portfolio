@@ -42,7 +42,7 @@ const Hero = () => {
   return (
     <FadeBottom>
       I will fade in
-      <Header1>Hello, I’m Fynn Roberts</Header1>
+      <Header1 tainted>Hello, I’m Fynn Roberts</Header1>
       <Typewriter
         options={{
           strings: ["Student", "Web Developer", "Mobile Developer"],
