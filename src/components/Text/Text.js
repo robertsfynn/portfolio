@@ -22,6 +22,7 @@ export const Header2 = styled.h2`
   line-height: 40.8px;
   letter-spacing: -1.5px;
   color: #ffffff;
+  text-align: center;
 `
 
 export const Header5 = styled.h5`
@@ -32,6 +33,7 @@ export const Header5 = styled.h5`
   line-height: 40.8px;
   letter-spacing: -1.5px;
   color: #ffffff;
+  text-align: center;
 `
 
 export const Header6 = styled.h6`
@@ -43,6 +45,7 @@ export const Header6 = styled.h6`
   text-align: center;
   color: #ffffff;
   margin-top: ${({ marginTop }) => marginTop}px;
+  text-align: center;
 `
 
 export const Paragraph = styled.p`

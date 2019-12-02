@@ -9,6 +9,13 @@ const StyledPortfolioItem = styled.div`
   margin-bottom: 30px;
 `
 
+const StyledPortfolioContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+
 const colors = [
   "311deg, #766ced, #413ad6",
   "to bottom, #65b1ff, #2c65e7",
@@ -20,9 +27,11 @@ const PortfolioItem = ({ image, item }) => {
     <BlockReveal>
       <StyledPortfolioItem item={item}>
         <FadeBottom delay={1000}>
-          <img src={image} alt="Mobile" />
-          <Header5>App Design</Header5>
-          <Paragraph>Yeaaah</Paragraph>
+          <StyledPortfolioContainer>
+            <img src={image} alt="Mobile" />
+            <Header5>App Design</Header5>
+            <Paragraph>Yeaaah</Paragraph>
+          </StyledPortfolioContainer>
         </FadeBottom>
       </StyledPortfolioItem>
     </BlockReveal>

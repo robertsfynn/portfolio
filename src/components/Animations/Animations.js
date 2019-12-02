@@ -12,11 +12,7 @@ const withScrollSpy = Wrapped => {
     }
 
     return (
-      <InView
-        tag="div"
-        onChange={onInViewChange}
-        inviewport={inViewport.toString()}
-      >
+      <InView tag="div" className="inview" onChange={onInViewChange}>
         <Wrapped {...props} inViewport={inViewport}>
           {children}
         </Wrapped>
