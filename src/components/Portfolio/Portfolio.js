@@ -7,10 +7,10 @@ import PortfolioItem from "./PortfolioItem"
 const Portfolio = () => {
   return (
     <Row style={{ marginTop: 1000 }}>
-      <Col md={5}>
+      <Col xs={12}>
         <PortfolioItem image={mobileImage} item={1} />
       </Col>
-      <Col md={7}>
+      <Col xs={12}>
         <PortfolioItem image={macImage} item={2} />
       </Col>
     </Row>
