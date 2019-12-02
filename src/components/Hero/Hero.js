@@ -1,8 +1,7 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
-import * as easings from "d3-ease"
-import { useSpring, animated } from "react-spring"
+import { FadeBottom } from "../Animations/Animations"
 
 import { Header1, Header6 } from "../Text/Text"
 
@@ -40,20 +39,8 @@ const SocialMediaItem = styled.div`
 `
 
 const Hero = () => {
-  const animationProps = useSpring({
-    config: { duration: 1000, easing: easings.easeQuadOut },
-    to: {
-      opacity: 1,
-      transform: "translateY(0)",
-    },
-    from: {
-      opacity: 0,
-      transform: "translateY(40px)",
-    },
-  })
-
   return (
-    <animated.div style={animationProps}>
+    <FadeBottom>
       I will fade in
       <Header1>Hello, I’m Fynn Roberts</Header1>
       <Typewriter
@@ -73,7 +60,7 @@ const Hero = () => {
           <a href="">in</a>
         </SocialMediaItem>
       </SocialMedia>
-    </animated.div>
+    </FadeBottom>
   )
 }
 

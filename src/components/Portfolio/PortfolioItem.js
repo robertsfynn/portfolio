@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 import styled from "styled-components"
 import { useSpring, animated } from "react-spring"
-import { InView } from "react-intersection-observer"
 import * as easings from "d3-ease"
 import { Paragraph, Header5 } from "../Text/Text"
+import { BlockReveal, FadeBottom } from "../Animations/Animations"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
@@ -50,17 +50,15 @@ const PortfolioItem = ({ image, item }) => {
   }
 
   return (
-    <InView tag="div" onChange={onInViewChange}>
-      <animated.div style={animationBlockProps}>
-        <StyledPortfolioItem item={item}>
-          <animated.div style={animationProps}>
-            <img src={image} alt="Mobile" />
-            <Header5>App Design</Header5>
-            <Paragraph>Yeaaah</Paragraph>
-          </animated.div>
-        </StyledPortfolioItem>
-      </animated.div>
-    </InView>
+    <BlockReveal>
+      <StyledPortfolioItem item={item}>
+        <FadeBottom delay={1000}>
+          <img src={image} alt="Mobile" />
+          <Header5>App Design</Header5>
+          <Paragraph>Yeaaah</Paragraph>
+        </FadeBottom>
+      </StyledPortfolioItem>
+    </BlockReveal>
   )
 }
 
