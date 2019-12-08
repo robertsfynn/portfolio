@@ -2,6 +2,7 @@ import React from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
 import { FadeBottom } from "../Animations/Animations"
+import { Container, Row, Col } from "react-awesome-styled-grid"
 
 import { Header1, Header6 } from "../Text/Text"
 
@@ -41,27 +42,38 @@ const SocialMediaItem = styled.div`
 const Hero = () => {
   return (
     <FadeBottom>
-      I will fade in
-      <Header1 marginBottom={1} tainted>
-        Hello, I’m Fynn Roberts
-      </Header1>
-      <Typewriter
-        options={{
-          strings: ["Student", "Web Developer", "Mobile Developer"],
-          autoStart: true,
-          loop: true,
-          delay: 100,
-        }}
-      />
-      <Header6 marginTop={20}>Follow me on</Header6>
-      <SocialMedia>
-        <SocialMediaItem>
-          <a href="">Tw</a>
-        </SocialMediaItem>
-        <SocialMediaItem>
-          <a href="">in</a>
-        </SocialMediaItem>
-      </SocialMedia>
+      <Container>
+        <Row>
+          <Col md={10}>
+            <div>
+              <Header1 marginBottom={1} tainted>
+                Hello, I’m Fynn Roberts
+              </Header1>
+              <Typewriter
+                options={{
+                  strings: ["Student", "Web Developer", "Mobile Developer"],
+                  autoStart: true,
+                  loop: true,
+                  delay: 100,
+                }}
+              />
+            </div>
+          </Col>
+          <Col md={2}>
+            <div>
+              <Header6 marginTop={20}>Follow me on</Header6>
+              <SocialMedia>
+                <SocialMediaItem>
+                  <a href="">Tw</a>
+                </SocialMediaItem>
+                <SocialMediaItem>
+                  <a href="">in</a>
+                </SocialMediaItem>
+              </SocialMedia>
+            </div>
+          </Col>
+        </Row>
+      </Container>
     </FadeBottom>
   )
 }
