@@ -43,7 +43,8 @@ export default ({ data }) => {
                 ></Paragraph>
               </div>
             </Col>
-            <Col xs={12} sm={3} offset={1}>
+            <Col sm={1}></Col>
+            <Col xs={12} sm={3}>
               <div style={{ width: "100%" }}>
                 <Header3>Details</Header3>
                 <Paragraph marginBottom={10} bold>
