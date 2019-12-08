@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Portfolio from "../components/Portfolio/Portfolio"
 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   const customConf = {
     mediaQuery: "only screen",
     columns: {
@@ -47,10 +47,30 @@ const IndexPage = () => {
     <ThemeProvider theme={{ awesomegrid: customConf }}>
       <Layout>
         <Hero />
-        <Portfolio />
+        <Portfolio items={data.allMarkdownRemark.edges} />
       </Layout>
     </ThemeProvider>
   )
 }
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            description
+            preview
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

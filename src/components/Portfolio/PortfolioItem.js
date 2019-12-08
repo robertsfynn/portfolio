@@ -17,20 +17,20 @@ const StyledPortfolioContainer = styled.div`
 `
 
 const colors = [
-  "311deg, #766ced, #413ad6",
   "to bottom, #65b1ff, #2c65e7",
   "175deg, #ff7847, #ffac8e",
+  "311deg, #766ced, #413ad6",
 ]
 
-const PortfolioItem = ({ image, item }) => {
+const PortfolioItem = ({ image, item, description, title }) => {
   return (
     <BlockReveal>
       <StyledPortfolioItem item={item}>
         <FadeBottom delay={1000}>
           <StyledPortfolioContainer>
             <img src={image} alt="Mobile" />
-            <Header5>App Design</Header5>
-            <Paragraph>Yeaaah</Paragraph>
+            <Header5>{title}</Header5>
+            <Paragraph>{description}</Paragraph>
           </StyledPortfolioContainer>
         </FadeBottom>
       </StyledPortfolioItem>

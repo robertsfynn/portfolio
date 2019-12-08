@@ -10,9 +10,10 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/`,
       },
     },
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
