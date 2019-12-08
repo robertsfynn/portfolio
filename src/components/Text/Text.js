@@ -15,7 +15,7 @@ export const Header1 = styled.h1`
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
 
   @media (min-width: 48rem) {
-    text-align: start;
+    text-align: ${({ start }) => (start ? "start" : "center")};
     font-size: 68px;
   }
 `

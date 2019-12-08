@@ -46,7 +46,7 @@ const Hero = () => {
         <Row>
           <Col md={10}>
             <div style={{ width: "100%" }}>
-              <Header1 marginBottom={1} tainted>
+              <Header1 start marginBottom={1} tainted>
                 Hello, I’m Fynn Roberts
               </Header1>
               <Typewriter
