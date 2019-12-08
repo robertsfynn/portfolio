@@ -1,7 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import mobileImage from "../../images/budget-tracker.png"
-import macImage from "../../images/imac.png"
 import PortfolioItem from "./PortfolioItem"
 import { Header2 } from "../Text/Text"
 
