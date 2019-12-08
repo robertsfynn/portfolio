@@ -19,6 +19,7 @@ const Portfolio = ({ items }) => {
                 item={id}
                 title={title}
                 description={description}
+                slug={node.fields.slug}
               />
             </Col>
           )

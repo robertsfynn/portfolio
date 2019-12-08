@@ -2,6 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import { Paragraph, Header5 } from "../Text/Text"
 import { BlockReveal, FadeBottom } from "../Animations/Animations"
+import { Link } from "gatsby"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
@@ -22,19 +23,19 @@ const colors = [
   "311deg, #766ced, #413ad6",
 ]
 
-const PortfolioItem = ({ image, item, description, title }) => {
+const PortfolioItem = ({ image, item, description, title, slug }) => {
   return (
-    <BlockReveal>
-      <StyledPortfolioItem item={item}>
-        <FadeBottom delay={1000}>
+    <FadeBottom>
+      <Link to={slug}>
+        <StyledPortfolioItem item={item}>
           <StyledPortfolioContainer>
             <img src={image} alt="Mobile" />
             <Header5>{title}</Header5>
             <Paragraph>{description}</Paragraph>
           </StyledPortfolioContainer>
-        </FadeBottom>
-      </StyledPortfolioItem>
-    </BlockReveal>
+        </StyledPortfolioItem>
+      </Link>
+    </FadeBottom>
   )
 }
 

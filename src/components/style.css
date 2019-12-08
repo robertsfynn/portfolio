@@ -67,3 +67,7 @@ body {
 .inview {
   width: 100%;
 }
+
+a {
+  text-decoration: none;
+}
