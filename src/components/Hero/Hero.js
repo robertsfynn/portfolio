@@ -45,7 +45,7 @@ const Hero = () => {
       <Container>
         <Row>
           <Col md={10}>
-            <div>
+            <div style={{ width: "100%" }}>
               <Header1 marginBottom={1} tainted>
                 Hello, I’m Fynn Roberts
               </Header1>
@@ -60,7 +60,7 @@ const Hero = () => {
             </div>
           </Col>
           <Col md={2}>
-            <div>
+            <div style={{ width: "100%" }}>
               <Header6 marginTop={20}>Follow me on</Header6>
               <SocialMedia>
                 <SocialMediaItem>

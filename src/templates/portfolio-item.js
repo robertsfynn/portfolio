@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import { Header1, Header3, Paragraph } from "../components/Text/Text"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import styled from "styled-components"
 import Tags from "../components/Tags"
 import { FadeBottom } from "../components/Animations/Animations"
@@ -35,7 +35,7 @@ export default ({ data }) => {
           <img src="https://via.placeholder.com/1152x740"></img>
           <Row>
             <Col xs={12} sm={8}>
-              <div>
+              <div style={{ width: "100%" }}>
                 <Header3>Description</Header3>
                 <Paragraph
                   tainted
