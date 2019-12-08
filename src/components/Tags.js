@@ -18,10 +18,9 @@ const TagContainer = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 3px;
-  border: solid 1px #ff4952;
+  border: solid 1px #4a4a4a;
   margin-right: 5px;
   margin-bottom: 5px;
-  background: #ff4952;
 
   p {
     margin: 0;

@@ -51,16 +51,16 @@ const Layout = ({ children }) => {
     container: {
       xs: "full", // 'full' = max-width: 100%
       sm: "full", // 'full' = max-width: 100%
-      md: "full", // 'full' = max-width: 100%
-      lg: 64, // max-width: 1440px
-      xl: 64, // max-width: 1440px
+      md: 64, // max-width: 1024px
+      lg: 64, // max-width: 1024px
+      xl: 64, // max-width: 1024px
     },
     breakpoints: {
       xs: 1,
       sm: 48, // 768px
       md: 64, // 1024px
-      lg: 64, // 1440px
-      xl: 64, // 1920px
+      lg: 90, // 1440px
+      xl: 120, // 1920px
     },
   }
 

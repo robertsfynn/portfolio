@@ -38,6 +38,10 @@ export const Header3 = styled.h3`
   color: #ffffff;
   margin-bottom: 40px;
   text-align: center;
+
+  @media (min-width: 48rem) {
+    text-align: start;
+  }
 `
 
 export const Header5 = styled.h5`
