@@ -28,6 +28,11 @@ export const Header2 = styled.h2`
   letter-spacing: -1.5px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: 48rem) {
+    font-size: 50px;
+    text-align: start;
+  }
 `
 
 export const Header3 = styled.h3`
