@@ -60,7 +60,7 @@ const Line = styled.span`
 
 const Hero = () => {
   return (
-    <Section>
+    <Section id="hero">
       <FadeBottom>
         <HeroContainer>
           <Container>
@@ -73,7 +73,11 @@ const Hero = () => {
                   </Header1>
                   <Typewriter
                     options={{
-                      strings: ["Student", "Web Developer", "Mobile Developer"],
+                      strings: [
+                        "Web Developer",
+                        "CMS Developer",
+                        "Mobile Developer",
+                      ],
                       autoStart: true,
                       loop: true,
                       delay: 100,

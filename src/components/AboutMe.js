@@ -23,7 +23,7 @@ const Icon = styled.img`
 
 const AboutMe = () => {
   return (
-    <Section>
+    <Section id="about-me">
       <Container>
         <Row>
           <Col sm={6}>

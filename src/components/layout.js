@@ -8,6 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { ThemeProvider } from "styled-components"
+import Navbar from "./Navbar"
 
 // import { useStaticQuery, graphql } from "gatsby"
 
@@ -37,7 +38,7 @@ const Layout = ({ children }) => {
     },
     gutterWidth: {
       xs: 0,
-      sm: 0,
+      sm: 1.5,
       md: 1.5,
       lg: 1.5,
       xl: 1.5,
@@ -68,6 +69,9 @@ const Layout = ({ children }) => {
   return (
     <ThemeProvider theme={{ awesomegrid: customConf }}>
       {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+      <header>
+        <Navbar />
+      </header>
       <main>{children}</main>
       <footer></footer>
     </ThemeProvider>

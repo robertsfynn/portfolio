@@ -16,6 +16,10 @@ export const Header1 = styled.h1`
 
   @media (min-width: 48rem) {
     text-align: ${({ align }) => align};
+    font-size: 45px;
+  }
+
+  @media (min-width: 64rem) {
     font-size: 68px;
   }
 `

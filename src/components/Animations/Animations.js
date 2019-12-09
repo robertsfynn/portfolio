@@ -26,7 +26,13 @@ const withScrollSpy = Wrapped => {
     }
 
     return (
-      <InView tag="div" className="inview" onChange={onInViewChange} threshold={0.4}>
+      <InView
+        tag="div"
+        className="inview"
+        onChange={onInViewChange}
+        threshold={0.4}
+        triggerOnce={true}
+      >
         <Wrapped {...props} inViewport={inViewport}>
           {children}
         </Wrapped>
@@ -37,6 +43,8 @@ const withScrollSpy = Wrapped => {
 }
 
 const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
+  console.log(inViewport)
+
   const animationProps = useSpring({
     config: config.slow,
     delay: delay ? delay : 0,
@@ -53,12 +61,10 @@ const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
   return <animated.div style={animationProps}>{children}</animated.div>
 }
 
-const AnimatedBlockReveal = ({ children, inViewport, delay }) => {
+const AnimatedBlockReveal = ({ children, inViewport }) => {
   const animationProps = useSpring({
+    config: { mass: 1, tension: 280, friction: 90 },
     to: [
-      {
-        transform: inViewport ? "translate(0, 0)" : "translate(-100%, 0)",
-      },
       {
         transform: inViewport ? "translate(100%, 0)" : "translate(-100%, 0)",
       },

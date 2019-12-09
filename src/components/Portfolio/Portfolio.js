@@ -5,7 +5,7 @@ import { Header2, Section } from "../Text/Text"
 
 const Portfolio = ({ items }) => {
   return (
-    <Section>
+    <Section id="portfolio">
       <Container>
         <Header2>Portfolio</Header2>
         <Row>
