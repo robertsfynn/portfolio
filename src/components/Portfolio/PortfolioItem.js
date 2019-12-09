@@ -35,7 +35,7 @@ const PortfolioItem = ({ image, item, description, title, slug }) => {
     <BlockRevealAnimation>
       <Link to={slug}>
         <StyledPortfolioItem item={item}>
-          <FadeBottom delay={1000}>
+          <FadeBottom delay={1500}>
             <StyledPortfolioContainer>
               <WidthContainer>
                 <Img fluid={image} />
