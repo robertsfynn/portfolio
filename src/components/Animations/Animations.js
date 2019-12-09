@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { useSpring, animated } from "react-spring"
 import { InView } from "react-intersection-observer"
-import * as easings from "d3-ease"
 
 const withScrollSpy = Wrapped => {
   const WithScrollSpy = ({ children, ...props }) => {
