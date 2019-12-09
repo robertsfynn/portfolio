@@ -21,8 +21,9 @@ const StyledNavbar = styled.nav`
 `
 
 const StyledCol = styled(Col)`
+  height: 0;
   height: ${({ open }) => (open ? "130px" : "0")};
-  /* transition: height 0.3s linear; */
+  transition: height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
 
@@ -33,7 +34,7 @@ const StyledCol = styled(Col)`
 `
 
 const NavbarList = styled.ul`
-  display: "flex";
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
