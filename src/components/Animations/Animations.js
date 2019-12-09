@@ -43,8 +43,6 @@ const withScrollSpy = Wrapped => {
 }
 
 const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
-  console.log(inViewport)
-
   const animationProps = useSpring({
     config: config.slow,
     delay: delay ? delay : 0,
@@ -55,6 +53,21 @@ const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
     from: {
       opacity: 0,
       transform: "translateY(40px)",
+    },
+  })
+
+  return <animated.div style={animationProps}>{children}</animated.div>
+}
+
+const AnimatedFade = ({ children, inViewport, delay }) => {
+  const animationProps = useSpring({
+    config: config.slow,
+    delay: delay ? delay : 0,
+    to: {
+      opacity: inViewport ? 1 : 0,
+    },
+    from: {
+      opacity: 0,
     },
   })
 
@@ -83,4 +96,5 @@ const AnimatedBlockReveal = ({ children, inViewport }) => {
 }
 
 export const FadeBottom = withScrollSpy(AnimatedFadeBottom)
+export const Fade = withScrollSpy(AnimatedFade)
 export const BlockReveal = withScrollSpy(AnimatedBlockReveal)

@@ -151,7 +151,9 @@ const Navbar = () => {
       <Container>
         <Row>
           <Col xs={12} sm={2} align="center">
-            <img src={logo} alt="Logo" style={{ margin: 0 }} />
+            <a href="/">
+              <img src={logo} alt="Logo" style={{ margin: 0 }} />
+            </a>
             <StyledBurger onClick={toggleNavbar} open={open}>
               <span></span>
               <span></span>
