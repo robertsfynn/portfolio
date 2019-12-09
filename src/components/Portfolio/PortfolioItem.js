@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { Paragraph, Header5 } from "../Text/Text"
-import { FadeBottom, BlockReveal } from "../Animations/Animations"
+import { FadeBottom, BlockReveal, Fade } from "../Animations/Animations"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
@@ -30,21 +30,23 @@ const colors = [
 
 const PortfolioItem = ({ image, item, description, title, slug }) => {
   return (
-    <BlockReveal>
-      <Link to={slug}>
-        <StyledPortfolioItem item={item}>
-          <FadeBottom delay={1000}>
-            <StyledPortfolioContainer>
-              <WidthContainer>
-                <Img fluid={image} />
-              </WidthContainer>
-              <Header5>{title}</Header5>
-              <Paragraph>{description}</Paragraph>
-            </StyledPortfolioContainer>
-          </FadeBottom>
-        </StyledPortfolioItem>
-      </Link>
-    </BlockReveal>
+    <Fade>
+      <BlockReveal>
+        <Link to={slug}>
+          <StyledPortfolioItem item={item}>
+            <FadeBottom delay={1000}>
+              <StyledPortfolioContainer>
+                <WidthContainer>
+                  <Img fluid={image} />
+                </WidthContainer>
+                <Header5>{title}</Header5>
+                <Paragraph>{description}</Paragraph>
+              </StyledPortfolioContainer>
+            </FadeBottom>
+          </StyledPortfolioItem>
+        </Link>
+      </BlockReveal>
+    </Fade>
   )
 }
 
