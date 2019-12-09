@@ -13,7 +13,7 @@ const StyledNavbar = styled.nav`
   top: 0;
   background: #07011e;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 10px 0;
+  padding: 10px 0 0 0;
 
   @media (min-width: 48rem) {
     padding: 0;

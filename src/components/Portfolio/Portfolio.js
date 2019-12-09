@@ -2,12 +2,15 @@ import React from "react"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import PortfolioItem from "./PortfolioItem"
 import { Header2, Section } from "../Text/Text"
+import { FadeBottom } from "../Animations/Animations"
 
 const Portfolio = ({ items }) => {
   return (
     <Section id="portfolio">
       <Container>
-        <Header2>Portfolio</Header2>
+        <FadeBottom>
+          <Header2>Portfolio</Header2>
+        </FadeBottom>
         <Row>
           {items.map(({ node }, id) => {
             const { title, description, previewImage } = node.frontmatter

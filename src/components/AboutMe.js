@@ -72,7 +72,7 @@ const AboutMe = () => {
                       <Icon src={cmsIcon} alt="CMS" />
                       <Header6>
                         CMS
-                        <br /> Experience
+                        <br /> Developer
                       </Header6>
                     </WidthContainer>
                   </Col>
