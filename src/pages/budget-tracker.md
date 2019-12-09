@@ -4,7 +4,7 @@ technologies: ["Javascript", "HTML"]
 description: "The designer knows he has reached perfection not when he has nothing to add, but when there is nothing to remove."
 preview: "budget-tracker.info"
 previewImage: "../images/budget-tracker.png"
-featuredImage: "../images/1152x740.png"
+featuredImages: ["../images/1152x740.png", "../images/1152x740_2.jpg"]
 ---
 
 The designer must be an interpreter, and real and virtual needs must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.

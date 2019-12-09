@@ -6,6 +6,10 @@ import { Container, Row, Col } from "react-awesome-styled-grid"
 
 import { Header1, Header6 } from "../Text/Text"
 
+const HeroContainer = styled.div`
+  margin-bottom: 100px;
+`
+
 const SocialMedia = styled.div`
   display: flex;
   justify-content: center;
@@ -47,38 +51,40 @@ const SocialMediaItem = styled.div`
 const Hero = () => {
   return (
     <FadeBottom>
-      <Container>
-        <Row>
-          <Col md={10}>
-            <WidthContainer>
-              <Header1 start marginBottom={1} tainted>
-                Hello, I’m Fynn Roberts
-              </Header1>
-              <Typewriter
-                options={{
-                  strings: ["Student", "Web Developer", "Mobile Developer"],
-                  autoStart: true,
-                  loop: true,
-                  delay: 100,
-                }}
-              />
-            </WidthContainer>
-          </Col>
-          <Col md={2}>
-            <WidthContainer>
-              <Header6 marginTop={20}>Follow me on</Header6>
-              <SocialMedia>
-                <SocialMediaItem>
-                  <a href="">Tw</a>
-                </SocialMediaItem>
-                <SocialMediaItem>
-                  <a href="">in</a>
-                </SocialMediaItem>
-              </SocialMedia>
-            </WidthContainer>
-          </Col>
-        </Row>
-      </Container>
+      <HeroContainer>
+        <Container>
+          <Row>
+            <Col md={10}>
+              <WidthContainer>
+                <Header1 align="start" marginBottom={1} tainted>
+                  Hello, I’m Fynn Roberts
+                </Header1>
+                <Typewriter
+                  options={{
+                    strings: ["Student", "Web Developer", "Mobile Developer"],
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                  }}
+                />
+              </WidthContainer>
+            </Col>
+            <Col md={2}>
+              <WidthContainer>
+                <Header6 marginTop={20}>Follow me on</Header6>
+                <SocialMedia>
+                  <SocialMediaItem>
+                    <a href="https://www.twitter.com/">Tw</a>
+                  </SocialMediaItem>
+                  <SocialMediaItem>
+                    <a href="https://www.linkedin.com/">in</a>
+                  </SocialMediaItem>
+                </SocialMedia>
+              </WidthContainer>
+            </Col>
+          </Row>
+        </Container>
+      </HeroContainer>
     </FadeBottom>
   )
 }

@@ -32,7 +32,7 @@ const Tags = ({ tags }) => {
   return (
     <TagsContainer>
       {tags.map(tag => (
-        <TagContainer>
+        <TagContainer key={tag}>
           <Paragraph>{tag}</Paragraph>
         </TagContainer>
       ))}

@@ -30,15 +30,14 @@ export default ({ data }) => {
     description,
     technologies,
     preview,
-    featuredImage,
+    featuredImages,
   } = data.markdownRemark.frontmatter
-  const image = featuredImage.childImageSharp.fluid
 
   return (
     <Layout>
       <FadeBottom>
         <Container>
-          <Header1>{title}</Header1>
+          <Header1 align="center">{title}</Header1>
           <SmallContainer>
             <Paragraph tainted center>
               {description}
@@ -49,15 +48,11 @@ export default ({ data }) => {
             options={flickityOptions} // takes flickity options {}
             static
           >
-            <WidthContainer>
-              <Img fluid={image} />
-            </WidthContainer>
-            <WidthContainer>
-              <Img fluid={image} />
-            </WidthContainer>
-            <WidthContainer>
-              <Img fluid={image} />
-            </WidthContainer>
+            {featuredImages.map(image => (
+              <WidthContainer key={image.id}>
+                <Img fluid={image.childImageSharp.fluid} />
+              </WidthContainer>
+            ))}
           </Flickity>
 
           <Row>
@@ -100,7 +95,8 @@ export const query = graphql`
         description
         technologies
         preview
-        featuredImage {
+        featuredImages {
+          id
           childImageSharp {
             fluid(maxWidth: 1140) {
               ...GatsbyImageSharpFluid
