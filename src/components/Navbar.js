@@ -28,7 +28,7 @@ const StyledCol = styled(Col)`
 
   @media (min-width: 48rem) {
     margin-top: 0;
-    height: 100%;
+    max-height: 100%;
   }
 `
 
