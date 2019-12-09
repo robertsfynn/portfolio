@@ -24,10 +24,10 @@ const Icon = styled.img`
 const AboutMe = () => {
   return (
     <Section>
-      <FadeBottom>
-        <Container>
-          <Row>
-            <Col sm={6}>
+      <Container>
+        <Row>
+          <Col sm={6}>
+            <FadeBottom>
               <WidthContainer>
                 <Header2>About me</Header2>
                 <Paragraph tainted>
@@ -37,9 +37,11 @@ const AboutMe = () => {
                   part of something special. I was part of something special.
                 </Paragraph>
               </WidthContainer>
-            </Col>
-            <Col sm={6}>
-              <WidthContainer>
+            </FadeBottom>
+          </Col>
+          <Col sm={6}>
+            <WidthContainer>
+              <FadeBottom>
                 <Header2>What I Do</Header2>
                 <Paragraph marginBottom={50} tainted>
                   Yeah, but your scientists were so preoccupied with whether or
@@ -47,6 +49,8 @@ const AboutMe = () => {
                   know what? It is beets. I've crashed into a beet truck. I was
                   part of something special. I was part of something special.
                 </Paragraph>
+              </FadeBottom>
+              <FadeBottom>
                 <Row>
                   <Col xs={12} sm={4} justify="center">
                     <WidthContainer>
@@ -73,11 +77,11 @@ const AboutMe = () => {
                     </WidthContainer>
                   </Col>
                 </Row>
-              </WidthContainer>
-            </Col>
-          </Row>
-        </Container>
-      </FadeBottom>
+              </FadeBottom>
+            </WidthContainer>
+          </Col>
+        </Row>
+      </Container>
     </Section>
   )
 }
