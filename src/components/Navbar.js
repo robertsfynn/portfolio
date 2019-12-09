@@ -21,8 +21,8 @@ const StyledNavbar = styled.nav`
 `
 
 const StyledCol = styled(Col)`
-  height: ${({ open }) => (open ? "130px" : "0")};
-  transition: all 0.3s linear;
+  max-height: ${({ open }) => (open ? "130px" : "0")};
+  transition: max-height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
 
