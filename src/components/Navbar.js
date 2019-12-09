@@ -26,9 +26,9 @@ const StyledCol = styled(Col)`
   overflow: hidden;
   margin-top: 15px;
 
-  @media (min-width: 48rem) {
+  @media (min-width: 48em) {
     margin-top: 0;
-    /* max-height: 100%; */
+    max-height: 100%;
   }
 `
 
@@ -132,7 +132,6 @@ const StyledBurger = styled.button`
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
-  console.log(open)
 
   const toggleNavbar = () => {
     setOpen(!open)
