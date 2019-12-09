@@ -26,7 +26,7 @@ const withScrollSpy = Wrapped => {
     }
 
     return (
-      <InView tag="div" className="inview" onChange={onInViewChange}>
+      <InView tag="div" className="inview" onChange={onInViewChange} threshold={0.3}>
         <Wrapped {...props} inViewport={inViewport}>
           {children}
         </Wrapped>

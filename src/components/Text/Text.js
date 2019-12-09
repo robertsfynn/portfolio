@@ -88,3 +88,20 @@ export const Paragraph = styled.p`
     text-align: center;
   }
 `
+
+export const WidthContainer = styled.div`
+  width: 100%;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")}px;
+
+  @media (min-width: 64rem) {
+    margin-bottom: 0;
+  }
+`
+
+export const Section = styled.section`
+  padding: 40px 0;
+
+  @media (min-width: 48rem) {
+    padding: 100px 0;
+  }
+`
