@@ -7,7 +7,7 @@ const TagsContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     align-items: start;
     justify-content: start;
   }

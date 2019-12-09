@@ -17,6 +17,11 @@ const SmallContainer = styled.div`
 
 const WidthContainer = styled.div`
   width: 100%;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")}px;
+
+  @media (min-width: 64rem) {
+    margin-bottom: 0;
+  }
 `
 
 const flickityOptions = {
@@ -54,10 +59,9 @@ export default ({ data }) => {
               </WidthContainer>
             ))}
           </Flickity>
-
           <Row>
             <Col xs={12} sm={8}>
-              <WidthContainer>
+              <WidthContainer marginBottom={75}>
                 <Header3>Description</Header3>
                 <Paragraph
                   tainted
