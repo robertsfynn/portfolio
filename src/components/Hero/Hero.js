@@ -45,6 +45,19 @@ const SocialMediaItem = styled.div`
   }
 `
 
+const Line = styled.span`
+  width: 55px;
+  height: 5px;
+  background-color: #ffb74f;
+  display: block;
+
+  margin: 0 auto 15px auto;
+
+  @media (min-width: 48rem) {
+    margin: 0 0 15px 0;
+  }
+`
+
 const Hero = () => {
   return (
     <Section>
@@ -54,6 +67,7 @@ const Hero = () => {
             <Row>
               <Col md={10}>
                 <WidthContainer>
+                  <Line />
                   <Header1 align="start" marginBottom={1} tainted>
                     Hello, I’m Fynn Roberts
                   </Header1>

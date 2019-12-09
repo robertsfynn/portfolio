@@ -27,8 +27,8 @@ const AboutMe = () => {
       <Container>
         <Row>
           <Col sm={6}>
-            <FadeBottom>
-              <WidthContainer>
+            <WidthContainer>
+              <FadeBottom>
                 <Header2>About me</Header2>
                 <Paragraph tainted>
                   Yeah, but your scientists were so preoccupied with whether or
@@ -36,8 +36,8 @@ const AboutMe = () => {
                   know what? It is beets. I've crashed into a beet truck. I was
                   part of something special. I was part of something special.
                 </Paragraph>
-              </WidthContainer>
-            </FadeBottom>
+              </FadeBottom>
+            </WidthContainer>
           </Col>
           <Col sm={6}>
             <WidthContainer>
