@@ -4,6 +4,7 @@ import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { Paragraph, Header5 } from "../Text/Text"
 import { FadeBottom } from "../Animations/Animations"
+import BlockRevealAnimation from "react-block-reveal-animation"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
@@ -30,19 +31,22 @@ const colors = [
 
 const PortfolioItem = ({ image, item, description, title, slug }) => {
   return (
-    <FadeBottom>
+    //Until I create it in react spring
+    <BlockRevealAnimation>
       <Link to={slug}>
         <StyledPortfolioItem item={item}>
-          <StyledPortfolioContainer>
-            <WidthContainer>
-              <Img fluid={image} />
-            </WidthContainer>
-            <Header5>{title}</Header5>
-            <Paragraph>{description}</Paragraph>
-          </StyledPortfolioContainer>
+          <FadeBottom delay={1000}>
+            <StyledPortfolioContainer>
+              <WidthContainer>
+                <Img fluid={image} />
+              </WidthContainer>
+              <Header5>{title}</Header5>
+              <Paragraph>{description}</Paragraph>
+            </StyledPortfolioContainer>
+          </FadeBottom>
         </StyledPortfolioItem>
       </Link>
-    </FadeBottom>
+    </BlockRevealAnimation>
   )
 }
 

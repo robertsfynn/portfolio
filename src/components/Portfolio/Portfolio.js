@@ -6,28 +6,28 @@ import { FadeBottom } from "../Animations/Animations"
 
 const Portfolio = ({ items }) => {
   return (
-    <FadeBottom>
-      <Container>
+    <Container>
+      <FadeBottom>
         <Header2>Portfolio</Header2>
-        <Row>
-          {items.map(({ node }, id) => {
-            const { title, description, previewImage } = node.frontmatter
+      </FadeBottom>
+      <Row>
+        {items.map(({ node }, id) => {
+          const { title, description, previewImage } = node.frontmatter
 
-            return (
-              <Col xs={12} sm={6} key={node.id}>
-                <PortfolioItem
-                  image={previewImage.childImageSharp.fluid}
-                  item={id}
-                  title={title}
-                  description={description}
-                  slug={node.fields.slug}
-                />
-              </Col>
-            )
-          })}
-        </Row>
-      </Container>
-    </FadeBottom>
+          return (
+            <Col xs={12} sm={6} key={node.id}>
+              <PortfolioItem
+                image={previewImage.childImageSharp.fluid}
+                item={id}
+                title={title}
+                description={description}
+                slug={node.fields.slug}
+              />
+            </Col>
+          )
+        })}
+      </Row>
+    </Container>
   )
 }
 
