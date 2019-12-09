@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { useSpring, animated } from "react-spring"
+import { useSpring, animated, config } from "react-spring"
 import { InView } from "react-intersection-observer"
 
 const withScrollSpy = Wrapped => {
@@ -23,7 +23,7 @@ const withScrollSpy = Wrapped => {
 
 const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
   const animationProps = useSpring({
-    config: { tension: 100 },
+    config: config.slow,
     delay: delay ? delay : 0,
     to: {
       opacity: inViewport ? 1 : 0,
