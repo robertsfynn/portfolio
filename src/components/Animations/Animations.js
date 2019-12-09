@@ -79,11 +79,11 @@ const AnimatedBlockReveal = ({ children, inViewport }) => {
     config: { mass: 1, tension: 280, friction: 90 },
     to: [
       {
-        transform: inViewport ? "translate(100%, 0)" : "translate(-100%, 0)",
+        transform: inViewport ? "translate(101%, 0)" : "translate(-101%, 0)",
       },
     ],
     from: {
-      transform: "translate(-100%, 0)",
+      transform: "translate(-101%, 0)",
     },
   })
 
