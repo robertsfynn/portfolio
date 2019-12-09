@@ -10115,15 +10115,6 @@ react-awesome-styled-grid@^3.0.0:
   resolved "https://registry.yarnpkg.com/react-awesome-styled-grid/-/react-awesome-styled-grid-3.0.0.tgz#ffe806f611d37fb688f09409c25291b11590c610"
   integrity sha512-V/OpveeqnHQcydj8h9xLX8IXHlk6s0VT7JUcnkxyhgduzYYeIHc2YNqHsr0vq7+gSzTKYFgR2YBKF/aTEq4Wrg==
 
-react-block-reveal-animation@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/react-block-reveal-animation/-/react-block-reveal-animation-1.0.1.tgz#e241dc668fb7ab8813628fdfa4464fab221fa47a"
-  integrity sha1-4kHcZo+3q4gTYo/fpEZPqyIfpHo=
-  dependencies:
-    prop-types "^15.6.1"
-    react "^16.0"
-    react-dom "^16.3.1"
-
 react-dev-utils@^4.2.3:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-4.2.3.tgz#5b42d9ea58d5e9e017a2f57a40a8af408a3a46fb"
@@ -10148,7 +10139,7 @@ react-dev-utils@^4.2.3:
     strip-ansi "3.0.1"
     text-table "0.2.0"
 
-react-dom@^16.12.0, react-dom@^16.3.1:
+react-dom@^16.12.0:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.12.0.tgz#0da4b714b8d13c2038c9396b54a92baea633fe11"
   integrity sha512-LMxFfAGrcS3kETtQaCkTKjMiifahaMySFDn71fZUNpPHZQEzmk/GiAeIT8JSOrHB23fnuCOMruL2a8NYlw+8Gw==
@@ -10250,7 +10241,7 @@ react-spring@^8.0.27:
     "@babel/runtime" "^7.3.1"
     prop-types "^15.5.8"
 
-react@^16.0, react@^16.12.0, react@^16.8.6:
+react@^16.12.0, react@^16.8.6:
   version "16.12.0"
   resolved "https://registry.yarnpkg.com/react/-/react-16.12.0.tgz#0c0a9c6a142429e3614834d5a778e18aa78a0b83"
   integrity sha512-fglqy3k5E+81pA8s+7K0/T3DBCF0ZDOher1elBFzF7O6arXJgzyu/FW+COxFvAWXJoJN9KIZbT2LXlukwphYTA==

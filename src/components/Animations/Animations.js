@@ -1,6 +1,21 @@
 import React, { useState } from "react"
 import { useSpring, animated, config } from "react-spring"
+import styled from "styled-components"
 import { InView } from "react-intersection-observer"
+
+const BlockRevealContainer = styled.div`
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+`
+
+const BlockRevealItem = styled(animated.div)`
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #07011e;
+`
 
 const withScrollSpy = Wrapped => {
   const WithScrollSpy = ({ children, ...props }) => {
@@ -38,4 +53,28 @@ const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
   return <animated.div style={animationProps}>{children}</animated.div>
 }
 
+const AnimatedBlockReveal = ({ children, inViewport, delay }) => {
+  const animationProps = useSpring({
+    to: [
+      {
+        transform: inViewport ? "translate(0, 0)" : "translate(-100%, 0)",
+      },
+      {
+        transform: inViewport ? "translate(100%, 0)" : "translate(-100%, 0)",
+      },
+    ],
+    from: {
+      transform: "translate(-100%, 0)",
+    },
+  })
+
+  return (
+    <BlockRevealContainer>
+      <BlockRevealItem style={animationProps}></BlockRevealItem>
+      {children}
+    </BlockRevealContainer>
+  )
+}
+
 export const FadeBottom = withScrollSpy(AnimatedFadeBottom)
+export const BlockReveal = withScrollSpy(AnimatedBlockReveal)

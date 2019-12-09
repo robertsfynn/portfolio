@@ -7,9 +7,7 @@ import { FadeBottom } from "../Animations/Animations"
 const Portfolio = ({ items }) => {
   return (
     <Container>
-      <FadeBottom>
-        <Header2>Portfolio</Header2>
-      </FadeBottom>
+      <Header2>Portfolio</Header2>
       <Row>
         {items.map(({ node }, id) => {
           const { title, description, previewImage } = node.frontmatter
