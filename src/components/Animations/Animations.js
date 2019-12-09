@@ -23,6 +23,7 @@ const withScrollSpy = Wrapped => {
 
 const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
   const animationProps = useSpring({
+    config: { tension: 100 },
     delay: delay ? delay : 0,
     to: {
       opacity: inViewport ? 1 : 0,
