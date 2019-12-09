@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { Container, Row, Col } from "react-awesome-styled-grid"
+import styled from "styled-components"
+import Img from "gatsby-image"
 import { Header1, Header3, Paragraph } from "../components/Text/Text"
 import Layout from "../components/layout"
-import styled from "styled-components"
 import Tags from "../components/Tags"
 import { FadeBottom } from "../components/Animations/Animations"
 
@@ -13,6 +14,13 @@ const SmallContainer = styled.div`
   text-align: center;
 `
 
+const ImageContainer = styled.div`
+  width: 100%;
+  margin-bottom: 25px;
+`
+
+const WidthContainer = styled.div``
+
 export default ({ data }) => {
   const { html } = data.markdownRemark
   const {
@@ -20,7 +28,9 @@ export default ({ data }) => {
     description,
     technologies,
     preview,
+    featuredImage,
   } = data.markdownRemark.frontmatter
+  const image = featuredImage.childImageSharp.fluid
 
   return (
     <Layout>
@@ -32,20 +42,22 @@ export default ({ data }) => {
               {description}
             </Paragraph>
           </SmallContainer>
-          <img src="https://via.placeholder.com/1152x740"></img>
+          <ImageContainer>
+            <Img fluid={image} />
+          </ImageContainer>
           <Row>
             <Col xs={12} sm={8}>
-              <div style={{ width: "100%" }}>
+              <WidthContainer>
                 <Header3>Description</Header3>
                 <Paragraph
                   tainted
                   dangerouslySetInnerHTML={{ __html: html }}
                 ></Paragraph>
-              </div>
+              </WidthContainer>
             </Col>
             <Col sm={1}></Col>
             <Col xs={12} sm={3}>
-              <div style={{ width: "100%" }}>
+              <WidthContainer>
                 <Header3>Details</Header3>
                 <Paragraph marginBottom={10} bold>
                   Technologies
@@ -55,7 +67,7 @@ export default ({ data }) => {
                   Preview
                 </Paragraph>
                 <Paragraph>{preview}</Paragraph>
-              </div>
+              </WidthContainer>
             </Col>
           </Row>
         </Container>
@@ -73,6 +85,13 @@ export const query = graphql`
         description
         technologies
         preview
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 1140) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

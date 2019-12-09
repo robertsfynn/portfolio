@@ -1,8 +1,9 @@
 import React from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
+import Img from "gatsby-image"
 import { Paragraph, Header5 } from "../Text/Text"
 import { BlockReveal, FadeBottom } from "../Animations/Animations"
-import { Link } from "gatsby"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
@@ -17,6 +18,10 @@ const StyledPortfolioContainer = styled.div`
   flex-direction: column;
 `
 
+const WidthContainer = styled.div`
+  width: 100%;
+`
+
 const colors = [
   "to bottom, #65b1ff, #2c65e7",
   "175deg, #ff7847, #ffac8e",
@@ -29,7 +34,9 @@ const PortfolioItem = ({ image, item, description, title, slug }) => {
       <Link to={slug}>
         <StyledPortfolioItem item={item}>
           <StyledPortfolioContainer>
-            <img src={image} alt="Mobile" />
+            <WidthContainer>
+              <Img fluid={image} />
+            </WidthContainer>
             <Header5>{title}</Header5>
             <Paragraph>{description}</Paragraph>
           </StyledPortfolioContainer>

@@ -21,6 +21,13 @@ export const query = graphql`
           frontmatter {
             title
             description
+            previewImage {
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           fields {
             slug

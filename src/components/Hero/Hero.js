@@ -10,6 +10,11 @@ const SocialMedia = styled.div`
   display: flex;
   justify-content: center;
 `
+
+const WidthContainer = styled.div`
+  width: 100%;
+`
+
 const SocialMediaItem = styled.div`
   display: flex;
   justify-content: center;
@@ -45,7 +50,7 @@ const Hero = () => {
       <Container>
         <Row>
           <Col md={10}>
-            <div style={{ width: "100%" }}>
+            <WidthContainer>
               <Header1 start marginBottom={1} tainted>
                 Hello, I’m Fynn Roberts
               </Header1>
@@ -57,10 +62,10 @@ const Hero = () => {
                   delay: 100,
                 }}
               />
-            </div>
+            </WidthContainer>
           </Col>
           <Col md={2}>
-            <div style={{ width: "100%" }}>
+            <WidthContainer>
               <Header6 marginTop={20}>Follow me on</Header6>
               <SocialMedia>
                 <SocialMediaItem>
@@ -70,7 +75,7 @@ const Hero = () => {
                   <a href="">in</a>
                 </SocialMediaItem>
               </SocialMedia>
-            </div>
+            </WidthContainer>
           </Col>
         </Row>
       </Container>
