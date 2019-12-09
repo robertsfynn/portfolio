@@ -13,6 +13,7 @@ import { ThemeProvider } from "styled-components"
 
 import "./layout.css"
 import "./style.css"
+import "./flickity.css"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`

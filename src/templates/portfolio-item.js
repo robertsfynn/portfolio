@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import styled from "styled-components"
+import Flickity from "react-flickity-component"
 import Img from "gatsby-image"
 import { Header1, Header3, Paragraph } from "../components/Text/Text"
 import Layout from "../components/layout"
@@ -14,12 +15,13 @@ const SmallContainer = styled.div`
   text-align: center;
 `
 
-const ImageContainer = styled.div`
+const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: 25px;
 `
 
-const WidthContainer = styled.div``
+const flickityOptions = {
+  pageDots: false,
+}
 
 export default ({ data }) => {
   const { html } = data.markdownRemark
@@ -42,9 +44,22 @@ export default ({ data }) => {
               {description}
             </Paragraph>
           </SmallContainer>
-          <ImageContainer>
-            <Img fluid={image} />
-          </ImageContainer>
+          <Flickity
+            className={"carousel"} // default ''
+            options={flickityOptions} // takes flickity options {}
+            static
+          >
+            <WidthContainer>
+              <Img fluid={image} />
+            </WidthContainer>
+            <WidthContainer>
+              <Img fluid={image} />
+            </WidthContainer>
+            <WidthContainer>
+              <Img fluid={image} />
+            </WidthContainer>
+          </Flickity>
+
           <Row>
             <Col xs={12} sm={8}>
               <WidthContainer>
