@@ -21,7 +21,10 @@ const StyledNavbar = styled.nav`
 `
 
 const StyledCol = styled(Col)`
-  height: ${({ open }) => (open ? "130px" : "0")};
+  height: ${({ open }) => {
+    console.log(open)
+    return open ? "130px" : "0"
+  }};
   transition: height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
@@ -132,6 +135,7 @@ const StyledBurger = styled.button`
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  console.log(open)
 
   const toggleNavbar = () => {
     setOpen(!open)

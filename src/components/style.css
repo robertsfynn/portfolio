@@ -23,13 +23,23 @@ body {
   text-align: center;
 }
 
+*[id]:before {
+  display: block;
+  content: " ";
+  margin-top: 71px;
+  visibility: hidden;
+}
+
 @media (min-width: 48rem) {
   .Typewriter span {
     font-size: 45px;
   }
-  
+
   .Typewriter {
     text-align: left;
+  }
+  *[id]:before {
+    content: none;
   }
 }
 
