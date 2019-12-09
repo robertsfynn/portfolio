@@ -8,6 +8,8 @@ import AboutMe from "../components/AboutMe"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <Hero />
+      <AboutMe />
       <Portfolio items={data.allMarkdownRemark.edges} />
     </Layout>
   )
