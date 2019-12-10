@@ -8,6 +8,7 @@ import { Header1, Header3, Paragraph } from "../components/Text/Text"
 import Layout from "../components/layout"
 import Tags from "../components/Tags"
 import { FadeBottom } from "../components/Animations/Animations"
+import SEO from "../components/seo"
 
 const SmallContainer = styled.div`
   max-width: 670px;
@@ -40,6 +41,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
+      <SEO title={title} />
       <Container>
         <FadeBottom>
           <Header1 align="center">{title}</Header1>

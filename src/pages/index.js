@@ -5,10 +5,12 @@ import Hero from "../components/Hero/Hero"
 import Portfolio from "../components/Portfolio/Portfolio"
 import AboutMe from "../components/AboutMe"
 import ContactForm from "../components/ContactForm"
+import SEO from "../components/seo"
 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
+      <SEO title="Home" />
       <Hero />
       <AboutMe />
       <Portfolio items={data.allMarkdownRemark.edges} />
