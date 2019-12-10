@@ -1,10 +1,10 @@
 import React from "react"
 import Typewriter from "typewriter-effect"
 import styled from "styled-components"
-import { FadeBottom } from "../Animations/Animations"
+import { FadeBottom } from "./Animations"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 
-import { Header1, Header6, Section } from "../Text/Text"
+import { Header1, Header6, Section } from "./Typograhpy"
 
 const HeroContainer = styled.div`
   margin-bottom: 100px;

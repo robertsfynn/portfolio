@@ -6,12 +6,12 @@ import {
   Header6,
   WidthContainer,
   Section,
-} from "./Text/Text"
+} from "./Typograhpy"
 import styled from "styled-components"
 import mobileDevelopmentIcon from "../icons/mobile-app.svg"
 import webDevelopmentIcon from "../icons/html.svg"
 import cmsIcon from "../icons/computer.svg"
-import { FadeBottom } from "./Animations/Animations"
+import { FadeBottom } from "./Animations"
 
 const Icon = styled.img`
   width: 50px;

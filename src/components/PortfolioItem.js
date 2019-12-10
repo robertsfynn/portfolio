@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import { Paragraph, Header5 } from "../Text/Text"
-import { FadeBottom, BlockReveal, Fade } from "../Animations/Animations"
+import { Paragraph, Header5 } from "./Typograhpy"
+import { FadeBottom, BlockReveal, Fade } from "./Animations"
 
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});

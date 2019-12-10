@@ -7,7 +7,7 @@ import {
   Header2,
   Header5,
   Paragraph,
-} from "./Text/Text"
+} from "./Typograhpy"
 
 const Label = styled.label`
   border: 0px;

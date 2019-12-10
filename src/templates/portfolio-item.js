@@ -4,10 +4,10 @@ import { Container, Row, Col } from "react-awesome-styled-grid"
 import styled from "styled-components"
 import Flickity from "react-flickity-component"
 import Img from "gatsby-image"
-import { Header1, Header3, Paragraph } from "../components/Text/Text"
+import { Header1, Header3, Paragraph } from "../components/Typograhpy"
+import { FadeBottom } from "../components/Animations"
 import Layout from "../components/layout"
 import Tags from "../components/Tags"
-import { FadeBottom } from "../components/Animations/Animations"
 import SEO from "../components/seo"
 
 const SmallContainer = styled.div`

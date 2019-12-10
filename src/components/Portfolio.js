@@ -1,8 +1,8 @@
 import React from "react"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import PortfolioItem from "./PortfolioItem"
-import { Header2, Section } from "../Text/Text"
-import { FadeBottom } from "../Animations/Animations"
+import { Header2, Section } from "./Typograhpy"
+import { FadeBottom } from "./Animations"
 
 const Portfolio = ({ items }) => {
   return (

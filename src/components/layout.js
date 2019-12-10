@@ -12,9 +12,9 @@ import Navbar from "./Navbar"
 
 // import { useStaticQuery, graphql } from "gatsby"
 
-import "./layout.css"
-import "./style.css"
-import "./flickity.css"
+import "../css/layout.css"
+import "../css/style.css"
+import "../css/flickity.css"
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`

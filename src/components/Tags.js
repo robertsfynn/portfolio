@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Paragraph } from "./Text/Text"
+import { Paragraph } from "./Typograhpy"
 
 const TagsContainer = styled.div`
   display: flex;
