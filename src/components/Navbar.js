@@ -158,7 +158,6 @@ const Navbar = () => {
               open={open}
               items={["hero", "about-me", "portfolio"]}
               currentClassName="is-current"
-              onUpdate={() => console.log("heyo")}
             >
               <NavbarListItem>
                 <NavbarListItemAnchor onClick={toggleNavbar} to="/#home">

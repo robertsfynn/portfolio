@@ -40,8 +40,8 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <FadeBottom>
-        <Container>
+      <Container>
+        <FadeBottom>
           <Header1 align="center">{title}</Header1>
           <SmallContainer>
             <Paragraph tainted center>
@@ -59,8 +59,10 @@ export default ({ data }) => {
               </WidthContainer>
             ))}
           </Flickity>
-          <Row>
-            <Col xs={12} sm={8}>
+        </FadeBottom>
+        <Row>
+          <Col xs={12} sm={8}>
+            <FadeBottom>
               <WidthContainer marginBottom={75}>
                 <Header3>Description</Header3>
                 <Paragraph
@@ -68,9 +70,11 @@ export default ({ data }) => {
                   dangerouslySetInnerHTML={{ __html: html }}
                 ></Paragraph>
               </WidthContainer>
-            </Col>
-            <Col sm={1}></Col>
-            <Col xs={12} sm={3}>
+            </FadeBottom>
+          </Col>
+          <Col sm={1}></Col>
+          <Col xs={12} sm={3}>
+            <FadeBottom>
               <WidthContainer>
                 <Header3>Details</Header3>
                 <Paragraph marginBottom={10} bold>
@@ -82,10 +86,10 @@ export default ({ data }) => {
                 </Paragraph>
                 <Paragraph>{preview}</Paragraph>
               </WidthContainer>
-            </Col>
-          </Row>
-        </Container>
-      </FadeBottom>
+            </FadeBottom>
+          </Col>
+        </Row>
+      </Container>
     </Layout>
   )
 }
