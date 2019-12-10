@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Hero from "../components/Hero/Hero"
 import Portfolio from "../components/Portfolio/Portfolio"
 import AboutMe from "../components/AboutMe"
+import ContactForm from "../components/ContactForm"
 
 const IndexPage = ({ data }) => {
   return (
@@ -11,6 +12,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <AboutMe />
       <Portfolio items={data.allMarkdownRemark.edges} />
+      {/* <ContactForm /> */}
     </Layout>
   )
 }

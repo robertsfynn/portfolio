@@ -63,6 +63,10 @@ export const Header5 = styled.h5`
   letter-spacing: -1.5px;
   color: #ffffff;
   text-align: center;
+
+  @media (min-width: 48rem) {
+    text-align: start;
+  }
 `
 
 export const Header6 = styled.h6`
