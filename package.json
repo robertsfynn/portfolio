@@ -24,6 +24,7 @@
     "react-flickity-component": "^3.4.0",
     "react-helmet": "^5.2.1",
     "react-intersection-observer": "^8.25.2",
+    "react-scrollspy": "^3.4.2",
     "react-spring": "^8.0.27",
     "styled-components": "^4.4.1",
     "typewriter-effect": "^2.12.1"

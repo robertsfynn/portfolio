@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { Link } from "gatsby"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import logo from "../icons/logo.svg"
-import { useSpring, config } from "react-spring"
+import Scrollspy from "react-scrollspy"
 
 const StyledNavbar = styled.nav`
   padding: 0;
@@ -32,7 +33,7 @@ const StyledCol = styled(Col)`
   }
 `
 
-const NavbarList = styled.ul`
+const NavbarList = styled(Scrollspy)`
   display: flex;
   list-style-type: none;
   margin: 0;
@@ -56,7 +57,7 @@ const NavbarListItem = styled.li`
   }
 `
 
-const NavbarListItemAnchor = styled.a`
+const NavbarListItemAnchor = styled(Link)`
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -77,7 +78,8 @@ const NavbarListItemAnchor = styled.a`
     transition: transform 300ms ease-in-out;
   }
 
-  :hover {
+  :hover,
+  .is-current > & {
     :after {
       transform: scaleX(1);
       transform-origin: 0% 100%;
@@ -137,15 +139,6 @@ const Navbar = () => {
     setOpen(!open)
   }
 
-  const [y, setY] = useSpring(() => ({
-    immediate: false,
-    y: 0,
-    onFrame: props => {
-      window.scroll(0, props.y)
-    },
-    config: config.slow,
-  }))
-
   return (
     <StyledNavbar>
       <Container>
@@ -161,19 +154,24 @@ const Navbar = () => {
             </StyledBurger>
           </Col>
           <StyledCol xs={12} sm={10} justify="center" open={open}>
-            <NavbarList open={open}>
+            <NavbarList
+              open={open}
+              items={["hero", "about-me", "portfolio"]}
+              currentClassName="is-current"
+              onUpdate={() => console.log("heyo")}
+            >
               <NavbarListItem>
-                <NavbarListItemAnchor onClick={toggleNavbar} href="#home">
+                <NavbarListItemAnchor onClick={toggleNavbar} to="/#home">
                   Home
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>
-                <NavbarListItemAnchor onClick={toggleNavbar} href="#about-me">
+                <NavbarListItemAnchor onClick={toggleNavbar} to="/#about-me">
                   Services
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>
-                <NavbarListItemAnchor onClick={toggleNavbar} href="#portfolio">
+                <NavbarListItemAnchor onClick={toggleNavbar} to="/#portfolio">
                   Portfolio
                 </NavbarListItemAnchor>
               </NavbarListItem>
