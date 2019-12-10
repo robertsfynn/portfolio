@@ -78,11 +78,13 @@ const NavbarListItemAnchor = styled(Link)`
     transition: transform 300ms ease-in-out;
   }
 
-  :hover,
-  .is-current > & {
-    :after {
-      transform: scaleX(1);
-      transform-origin: 0% 100%;
+  @media (min-width: 48rem) {
+    :hover,
+    .is-current > & {
+      :after {
+        transform: scaleX(1);
+        transform-origin: 0% 100%;
+      }
     }
   }
 `
@@ -147,7 +149,11 @@ const Navbar = () => {
             <a href="/">
               <img src={logo} alt="Logo" style={{ margin: 0 }} />
             </a>
-            <StyledBurger onClick={toggleNavbar} open={open}>
+            <StyledBurger
+              onClick={toggleNavbar}
+              open={open}
+              aria-label="Burger Menu"
+            >
               <span></span>
               <span></span>
               <span></span>

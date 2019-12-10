@@ -89,7 +89,10 @@ const Hero = () => {
                 <WidthContainer>
                   <Header6 marginTop={20}>Follow me on</Header6>
                   <SocialMedia>
-                    <a href="https://www.twitter.com/">
+                    <a
+                      href="https://www.twitter.com/"
+                      aria-label="Link to my Github Account"
+                    >
                       <SocialMediaItem>
                         <svg
                           role="img"
@@ -101,7 +104,10 @@ const Hero = () => {
                         </svg>
                       </SocialMediaItem>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a
+                      href="https://www.linkedin.com/"
+                      aria-label="Link to my LinkedIn Account"
+                    >
                       <SocialMediaItem>
                         <svg
                           role="img"
@@ -113,7 +119,10 @@ const Hero = () => {
                         </svg>
                       </SocialMediaItem>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a
+                      href="https://www.linkedin.com/"
+                      aria-label="Link to my Twitter Account"
+                    >
                       <SocialMediaItem>
                         <svg
                           role="img"
