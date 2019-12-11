@@ -6,6 +6,7 @@ import Portfolio from "../components/Portfolio"
 import AboutMe from "../components/AboutMe"
 import ContactForm from "../components/ContactForm"
 import SEO from "../components/seo"
+import Timeline from "../components/Timeline"
 
 const IndexPage = ({ data }) => {
   return (
@@ -13,6 +14,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero />
       <AboutMe />
+      {/* <Timeline /> */}
       <Portfolio items={data.allMarkdownRemark.edges} />
       {/* <ContactForm /> */}
     </Layout>
