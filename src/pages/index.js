@@ -14,7 +14,7 @@ const IndexPage = ({ data }) => {
       <SEO title="Home" />
       <Hero />
       <AboutMe />
-      {/* <Timeline /> */}
+      <Timeline />
       <Portfolio items={data.allMarkdownRemark.edges} />
       {/* <ContactForm /> */}
     </Layout>

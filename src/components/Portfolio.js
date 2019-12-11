@@ -2,7 +2,7 @@ import React from "react"
 import { Container, Row, Col } from "react-awesome-styled-grid"
 import PortfolioItem from "./PortfolioItem"
 import { Header2, Section } from "./Typograhpy"
-import { FadeBottom } from "./Animations"
+import { FadeBottom } from "../animations"
 
 const Portfolio = ({ items }) => {
   return (

@@ -1,13 +1,15 @@
 import React from "react"
 import { Container } from "react-awesome-styled-grid"
-import { Line } from "./Animations"
-import { Section } from "./Typograhpy"
+import { Line } from "../animations"
+import { Section, Paragraph } from "./Typograhpy"
 import styled from "styled-components"
 
 const StyledTimeline = styled.ul`
-  > :nth-child(2n) li div:last-child {
-    right: 45px;
-    left: initial;
+  @media (min-width: 48rem) {
+    > :nth-child(2n) li div:last-child {
+      right: 45px;
+      left: initial;
+    }
   }
 `
 
@@ -16,14 +18,24 @@ const Timeline = () => {
     <Section id="timeline">
       <Container>
         <StyledTimeline>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
-          <Line threshold={1}>You can do it</Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
+          <Line threshold={1}>
+            <Paragraph>You can do it</Paragraph>
+          </Line>
         </StyledTimeline>
       </Container>
     </Section>

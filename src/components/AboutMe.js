@@ -11,7 +11,7 @@ import styled from "styled-components"
 import mobileDevelopmentIcon from "../icons/mobile-app.svg"
 import webDevelopmentIcon from "../icons/html.svg"
 import cmsIcon from "../icons/computer.svg"
-import { FadeBottom } from "./Animations"
+import { FadeBottom } from "../animations"
 
 const Icon = styled.img`
   width: 50px;
