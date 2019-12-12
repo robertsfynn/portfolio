@@ -90,7 +90,7 @@ const Hero = () => {
                   <Header6 marginTop={20}>Follow me on</Header6>
                   <SocialMedia>
                     <a
-                      href="https://www.twitter.com/"
+                      href="https://github.com/robertsfynn"
                       aria-label="Link to my Github Account"
                     >
                       <SocialMediaItem>
@@ -120,7 +120,7 @@ const Hero = () => {
                       </SocialMediaItem>
                     </a>
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.twitter.com/"
                       aria-label="Link to my Twitter Account"
                     >
                       <SocialMediaItem>

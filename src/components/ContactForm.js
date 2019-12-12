@@ -3,11 +3,11 @@ import { Container, Col } from 'react-awesome-styled-grid';
 import styled from 'styled-components';
 import { Section, Header2, Header5, Paragraph, StyledRow } from './Typograhpy';
 import arrow from '../icons/right-arrow.svg';
+import { FadeBottom } from '../animations';
 
 const ContactFormContainer = styled.div`
   padding: 30px 40px;
-  box-shadow: 0 66px 58px 0 rgba(99, 99, 99, 0.1);
-  background-color: #252039;
+  background-color: #1c2039;
   text-align: center;
   width: 100%;
 
@@ -96,35 +96,39 @@ const ContactForm = () => {
       <Container>
         <StyledRow>
           <Col xs={12} sm={5}>
-            <ContactContainer>
-              <Header2 align="start">Contact Me</Header2>
-              <Header5 marginBottom={1}>Mail</Header5>
-              <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
-              <Header5 marginBottom={1}>Github</Header5>
-              <Paragraph tainted>github.com/robertsfynn</Paragraph>
-              <Header5 marginBottom={1}>Mail</Header5>
-              <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
-            </ContactContainer>
+            <FadeBottom>
+              <ContactContainer>
+                <Header2 align="start">Contact Me</Header2>
+                <Header5 marginBottom={1}>Mail</Header5>
+                <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
+                <Header5 marginBottom={1}>Github</Header5>
+                <Paragraph tainted>github.com/robertsfynn</Paragraph>
+                <Header5 marginBottom={1}>Mail</Header5>
+                <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
+              </ContactContainer>
+            </FadeBottom>
           </Col>
           <Col xs={12} sm={7}>
-            <ContactFormContainer>
-              <form name="Contact Form" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="Contact Form" />
-                <InputContainer>
-                  <Label for="name">Name:</Label>
-                  <Input required type="text" name="name" />
-                </InputContainer>
-                <InputContainer>
-                  <Label for="email">Your Email:</Label>
-                  <Input required type="email" name="email" />
-                </InputContainer>
-                <InputContainer>
-                  <Label for="message">Message:</Label>
-                  <Textarea required name="message" />
-                </InputContainer>
-                <SubmitButton type="submit">Send Message</SubmitButton>
-              </form>
-            </ContactFormContainer>
+            <FadeBottom>
+              <ContactFormContainer>
+                <form name="Contact Form" method="POST" data-netlify="true">
+                  <input type="hidden" name="form-name" value="Contact Form" />
+                  <InputContainer>
+                    <Label for="name">Name:</Label>
+                    <Input required type="text" name="name" />
+                  </InputContainer>
+                  <InputContainer>
+                    <Label for="email">Your Email:</Label>
+                    <Input required type="email" name="email" />
+                  </InputContainer>
+                  <InputContainer>
+                    <Label for="message">Message:</Label>
+                    <Textarea required name="message" />
+                  </InputContainer>
+                  <SubmitButton type="submit">Send Message</SubmitButton>
+                </form>
+              </ContactFormContainer>
+            </FadeBottom>
           </Col>
         </StyledRow>
       </Container>

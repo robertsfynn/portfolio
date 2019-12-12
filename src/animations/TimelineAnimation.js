@@ -32,10 +32,9 @@ const TimelineItem = styled(animated.div)`
   border-radius: 5px;
   display: flex;
   align-items: center;
-  background-color: #252039;
+  background-color: #1c2039;
   text-align: center;
   flex-direction: column;
-
 
   @media (min-width: 48rem) {
     width: 300px;

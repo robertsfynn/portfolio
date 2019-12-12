@@ -1,5 +1,7 @@
 import styled from 'styled-components';
 import { Row } from 'react-awesome-styled-grid';
+import redBackground from '../images/orange-bg.svg';
+import blueBackground from '../images/bx-home.svg';
 
 export const Header1 = styled.h1`
   font-family: Roboto, sans-serif;
@@ -111,6 +113,32 @@ export const WidthContainer = styled.div`
 
 export const Section = styled.section`
   padding: 40px 0;
+
+  :nth-of-type(3) {
+    background: url(${redBackground}) no-repeat;
+    background-position: center;
+
+    @media (min-width: 48rem) {
+      background-position: calc(50% + 300px) 50%;
+    }
+
+    @media (min-width: 64rem) {
+      background-position: calc(50% + 600px) 50%;
+    }
+  }
+
+  :nth-of-type(5) {
+    background: url(${blueBackground}) no-repeat;
+    background-position: center;
+
+    @media (min-width: 48rem) {
+      background-position: calc(50% - 300px) 0;
+    }
+
+    @media (min-width: 64rem) {
+      background-position: calc(50% - 700px) 0;
+    }
+  }
 
   @media (min-width: 48rem) {
     padding: 110px 0;
