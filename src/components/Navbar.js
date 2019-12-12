@@ -23,7 +23,7 @@ const StyledNavbar = styled.nav`
 `;
 
 const StyledCol = styled(Col)`
-  max-height: ${({ open }) => (open ? '140px' : '0')};
+  max-height: ${({ open }) => (open ? '225px' : '0')};
   transition: max-height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
@@ -171,8 +171,15 @@ const Navbar = () => {
           <StyledCol xs={12} sm={10} justify="center" open={open}>
             <NavbarList
               open={open}
-              items={['hero', 'about-me', 'timeline', 'portfolio']}
+              items={[
+                'hero',
+                'about-me',
+                'timeline',
+                'portfolio',
+                'contact-form',
+              ]}
               currentClassName="is-current"
+              offset={-5}
             >
               <NavbarListItem>
                 <NavbarListItemAnchor onClick={toggleNavbar} to="/#home">
@@ -192,6 +199,14 @@ const Navbar = () => {
               <NavbarListItem>
                 <NavbarListItemAnchor onClick={toggleNavbar} to="/#portfolio">
                   Portfolio
+                </NavbarListItemAnchor>
+              </NavbarListItem>
+              <NavbarListItem>
+                <NavbarListItemAnchor
+                  onClick={toggleNavbar}
+                  to="/#contact-form"
+                >
+                  Contact
                 </NavbarListItemAnchor>
               </NavbarListItem>
             </NavbarList>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container } from 'react-awesome-styled-grid';
-import { Line } from '../animations';
+import { Line, FadeBottom } from '../animations';
 import { Section, Paragraph, Header2 } from './Typograhpy';
 import styled from 'styled-components';
 
@@ -19,9 +19,11 @@ const Timeline = () => {
   return (
     <Section id="timeline">
       <Container>
-        <Header2 center marginBottom={50}>
-          Timeline
-        </Header2>
+        <FadeBottom>
+          <Header2 center marginBottom={50}>
+            Timeline
+          </Header2>
+        </FadeBottom>
         <StyledTimeline>
           <Line threshold={1} date="2008 - 2015">
             <Paragraph bold marginBottom={1}>
@@ -33,7 +35,7 @@ const Timeline = () => {
             <Paragraph bold marginBottom={1}>
               TU Berlin
             </Paragraph>
-            <Paragraph center>Wirtschaftsinformatik</Paragraph>
+            <Paragraph center>Wirtschaftsinformatik (Bachelor)</Paragraph>
           </Line>
           <Line threshold={1} date="March 2018 - July 2018">
             <Paragraph bold marginBottom={1}>

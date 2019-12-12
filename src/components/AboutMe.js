@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-awesome-styled-grid';
+import { Container, Col } from 'react-awesome-styled-grid';
 import {
   Header2,
   Paragraph,

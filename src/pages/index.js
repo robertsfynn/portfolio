@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => {
       <AboutMe />
       <Timeline />
       <Portfolio items={data.allMarkdownRemark.edges} />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </Layout>
   );
 };

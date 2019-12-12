@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'react-awesome-styled-grid';
+import { Container, Col } from 'react-awesome-styled-grid';
 import PortfolioItem from './PortfolioItem';
 import { Header2, Section, StyledRow } from './Typograhpy';
 import { FadeBottom } from '../animations';

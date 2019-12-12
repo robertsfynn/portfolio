@@ -2,7 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import styled from 'styled-components';
 import { FadeBottom } from '../animations';
-import { Container, Row, Col } from 'react-awesome-styled-grid';
+import { Container, Col } from 'react-awesome-styled-grid';
 
 import { Header1, Header6, Section, StyledRow } from './Typograhpy';
 

@@ -65,6 +65,7 @@ export const Header5 = styled.h5`
   letter-spacing: -1.5px;
   color: #ffffff;
   text-align: center;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
 
   @media (min-width: 48rem) {
     text-align: start;
