@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Row } from 'react-awesome-styled-grid';
 import redBackground from '../images/orange-bg.svg';
 import blueBackground from '../images/bx-home.svg';
+import arrow from '../icons/right-arrow.svg';
 
 export const Header1 = styled.h1`
   font-family: Roboto, sans-serif;
@@ -149,5 +150,37 @@ export const StyledRow = styled(Row)`
   &&& {
     margin-left: 0;
     margin-right: 0;
+  }
+`;
+
+export const Button = styled.button`
+  font-family: 'Roboto', sans-serif;
+  padding: 12px 22px;
+  color: #fff;
+  border-radius: 30px;
+  background: rgba(255, 73, 82, 0);
+  border: 1px solid rgba(255, 73, 82, 0.6);
+  border-right: 1px solid transparent;
+  background: #ff4952;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  :after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    margin-left: 10px;
+    background: url(${arrow}) no-repeat;
+    background-size: contain;
+    transition: all 300ms ease-in-out;
+  }
+
+  :hover {
+    :after {
+      transform: translatex(7px);
+      transition: all 0.4s;
+    }
   }
 `;

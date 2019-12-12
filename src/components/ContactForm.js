@@ -1,8 +1,14 @@
 import React from 'react';
 import { Container, Col } from 'react-awesome-styled-grid';
 import styled from 'styled-components';
-import { Section, Header2, Header5, Paragraph, StyledRow } from './Typograhpy';
-import arrow from '../icons/right-arrow.svg';
+import {
+  Section,
+  Header2,
+  Header5,
+  Paragraph,
+  StyledRow,
+  Button,
+} from './Typograhpy';
 import { FadeBottom } from '../animations';
 
 const ContactFormContainer = styled.div`
@@ -66,38 +72,6 @@ const Textarea = styled.textarea`
   background: transparent;
 `;
 
-const SubmitButton = styled.button`
-  font-family: 'Roboto', sans-serif;
-  padding: 19px 22px;
-  color: #fff;
-  border-radius: 30px;
-  background: rgba(255, 73, 82, 0);
-  border: 1px solid rgba(255, 73, 82, 0.6);
-  border-right: 1px solid transparent;
-  background: #ff4952;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-
-  :after {
-    content: '';
-    display: inline-block;
-    width: 20px;
-    height: 15px;
-    margin-left: 10px;
-    background: url(${arrow}) no-repeat;
-    background-size: contain;
-    transition: all 300ms ease-in-out;
-  }
-
-  :hover {
-    :after {
-      transform: translatex(7px);
-      transition: all 0.4s;
-    }
-  }
-`;
-
 const ContactForm = () => {
   return (
     <Section id="contact-form">
@@ -122,18 +96,18 @@ const ContactForm = () => {
                 <form name="Contact Form" method="POST" data-netlify="true">
                   <input type="hidden" name="form-name" value="Contact Form" />
                   <InputContainer>
-                    <Label for="name">Name:</Label>
+                    <Label htmlFor="name">Name:</Label>
                     <Input required type="text" name="name" />
                   </InputContainer>
                   <InputContainer>
-                    <Label for="email">Your Email:</Label>
+                    <Label htmlFor="email">Your Email:</Label>
                     <Input required type="email" name="email" />
                   </InputContainer>
                   <InputContainer>
-                    <Label for="message">Message:</Label>
+                    <Label htmlFor="message">Message:</Label>
                     <Textarea required name="message" />
                   </InputContainer>
-                  <SubmitButton type="submit">Send Message</SubmitButton>
+                  <Button type="submit">Send Message</Button>
                 </form>
               </ContactFormContainer>
             </FadeBottom>
