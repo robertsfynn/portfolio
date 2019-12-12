@@ -1,11 +1,11 @@
 ---
-title: 'Budget Tracker'
-technologies: ['React', 'Firebase']
-description: 'Web Application to track transactions, keep budgets and see statistics'
-preview: 'budget-tracker.info'
-previewImage: '../images/budget-tracker.png'
+title: 'Akenko'
+technologies: ['React Native', 'Redux']
+description: 'Mobile App to create and track workouts, view statistics and compete with friends.'
+preview: 'github.com/robertsfynn/akenko'
+previewImage: '../images/kenko.png'
 featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
-item: 4
+item: 1
 ---
 
 The designer must be an interpreter, and real and virtual needs must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.

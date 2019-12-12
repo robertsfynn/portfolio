@@ -78,8 +78,8 @@ const ContactForm = () => {
       <Container>
         <StyledRow>
           <Col xs={12} sm={5}>
-            <FadeBottom>
-              <ContactContainer>
+            <ContactContainer>
+              <FadeBottom>
                 <Header2 align="start">Contact Me</Header2>
                 <Header5 marginBottom={1}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
@@ -87,8 +87,8 @@ const ContactForm = () => {
                 <Paragraph tainted>github.com/robertsfynn</Paragraph>
                 <Header5 marginBottom={1}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
-              </ContactContainer>
-            </FadeBottom>
+              </FadeBottom>
+            </ContactContainer>
           </Col>
           <Col xs={12} sm={7}>
             <FadeBottom>

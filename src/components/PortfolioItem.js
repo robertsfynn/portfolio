@@ -47,35 +47,58 @@ const StyledPortfolioItem = styled.div`
 
 const StyledPortfolioContainer = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 `;
 
 const WidthContainer = styled.div`
   width: 100%;
 `;
 
+const TextContainer = styled.div`
+  max-width: 70%;
+`;
+
 const colors = [
   'to bottom, #65b1ff, #2c65e7',
-  '175deg, #ff7847, #ffac8e',
   '311deg, #766ced, #413ad6',
+  '175deg, #ff7847, #ffac8e',
+  '330deg, #ffe596, #ffbf00',
 ];
 
 const PortfolioItem = ({ image, item, description, title, slug }) => {
+  const firstTemplate = (
+    <StyledPortfolioContainer>
+      <WidthContainer>
+        <Img fluid={image} />
+      </WidthContainer>
+      <TextContainer>
+        <Header5>{title}</Header5>
+        <Paragraph>{description}</Paragraph>
+      </TextContainer>
+    </StyledPortfolioContainer>
+  );
+
+  const secondTemplate = (
+    <StyledPortfolioContainer>
+      <TextContainer>
+        <Header5>{title}</Header5>
+        <Paragraph>{description}</Paragraph>
+      </TextContainer>
+      <WidthContainer>
+        <Img fluid={image} />
+      </WidthContainer>
+    </StyledPortfolioContainer>
+  );
+
   return (
     <Fade>
       <BlockReveal>
         <Link to={slug}>
           <StyledPortfolioItem item={item}>
             <FadeBottom delay={1000}>
-              <StyledPortfolioContainer>
-                <WidthContainer>
-                  <Img fluid={image} />
-                </WidthContainer>
-                <Header5>{title}</Header5>
-                <Paragraph>{description}</Paragraph>
-              </StyledPortfolioContainer>
+              {(item + 1) % 2 === 0 ? firstTemplate : secondTemplate}
             </FadeBottom>
             <HoverState>
               <Button>View Project</Button>

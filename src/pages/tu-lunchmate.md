@@ -1,11 +1,11 @@
 ---
-title: 'Budget Tracker'
+title: 'TU Lunchmate'
 technologies: ['React', 'Firebase']
-description: 'Web Application to track transactions, keep budgets and see statistics'
-preview: 'budget-tracker.info'
-previewImage: '../images/budget-tracker.png'
+description: 'Web Application to find students with similar interests and go to lunch together'
+preview: 'tu-lunchmate.netlify.de'
+previewImage: '../images/tu-lunchmate.png'
 featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
-item: 4
+item: 3
 ---
 
 The designer must be an interpreter, and real and virtual needs must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.
