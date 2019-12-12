@@ -1,9 +1,9 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import { Link } from "gatsby"
-import { Container, Row, Col } from "react-awesome-styled-grid"
-import logo from "../icons/logo.svg"
-import Scrollspy from "react-scrollspy"
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import logo from '../icons/logo.svg';
+import Scrollspy from 'react-scrollspy';
 
 const StyledNavbar = styled.nav`
   padding: 0;
@@ -19,10 +19,10 @@ const StyledNavbar = styled.nav`
   @media (min-width: 48rem) {
     padding: 0;
   }
-`
+`;
 
 const StyledCol = styled(Col)`
-  max-height: ${({ open }) => (open ? "140px" : "0")};
+  max-height: ${({ open }) => (open ? '140px' : '0')};
   transition: max-height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
@@ -31,7 +31,7 @@ const StyledCol = styled(Col)`
     margin-top: 0;
     max-height: 100%;
   }
-`
+`;
 
 const NavbarList = styled(Scrollspy)`
   display: flex;
@@ -45,7 +45,7 @@ const NavbarList = styled(Scrollspy)`
     flex-direction: row;
     margin-left: auto;
   }
-`
+`;
 
 const NavbarListItem = styled.li`
   padding: 10px 0;
@@ -55,11 +55,11 @@ const NavbarListItem = styled.li`
   @media (min-width: 48rem) {
     padding: 20px 15px;
   }
-`
+`;
 
 const NavbarListItemAnchor = styled(Link)`
   font-size: 14px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   line-height: 0.71;
   letter-spacing: normal;
@@ -69,7 +69,7 @@ const NavbarListItemAnchor = styled(Link)`
   padding-bottom: 10px;
 
   :after {
-    content: "";
+    content: '';
     display: block;
     border-bottom: solid 2px #ff4952;
     transform: scaleX(0);
@@ -87,7 +87,7 @@ const NavbarListItemAnchor = styled(Link)`
       }
     }
   }
-`
+`;
 
 const StyledBurger = styled.button`
   margin-left: auto;
@@ -120,26 +120,26 @@ const StyledBurger = styled.button`
     transform-origin: 1px;
 
     :first-child {
-      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+      transform: ${({ open }) => (open ? 'rotate(45deg)' : 'rotate(0)')};
     }
 
     :nth-child(2) {
-      opacity: ${({ open }) => (open ? "0" : "1")};
-      transform: ${({ open }) => (open ? "translateX(20px)" : "translateX(0)")};
+      opacity: ${({ open }) => (open ? '0' : '1')};
+      transform: ${({ open }) => (open ? 'translateX(20px)' : 'translateX(0)')};
     }
 
     :nth-child(3) {
-      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+      transform: ${({ open }) => (open ? 'rotate(-45deg)' : 'rotate(0)')};
     }
   }
-`
+`;
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setOpen(!open)
-  }
+    setOpen(!open);
+  };
 
   return (
     <StyledNavbar>
@@ -162,7 +162,7 @@ const Navbar = () => {
           <StyledCol xs={12} sm={10} justify="center" open={open}>
             <NavbarList
               open={open}
-              items={["hero", "about-me", "portfolio"]}
+              items={['hero', 'about-me', 'portfolio']}
               currentClassName="is-current"
             >
               <NavbarListItem>
@@ -185,7 +185,7 @@ const Navbar = () => {
         </Row>
       </Container>
     </StyledNavbar>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

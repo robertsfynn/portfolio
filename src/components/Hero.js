@@ -1,23 +1,23 @@
-import React from "react"
-import Typewriter from "typewriter-effect"
-import styled from "styled-components"
-import { FadeBottom } from "../animations"
-import { Container, Row, Col } from "react-awesome-styled-grid"
+import React from 'react';
+import Typewriter from 'typewriter-effect';
+import styled from 'styled-components';
+import { FadeBottom } from '../animations';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
 
-import { Header1, Header6, Section } from "./Typograhpy"
+import { Header1, Header6, Section } from './Typograhpy';
 
 const HeroContainer = styled.div`
   margin-bottom: 100px;
-`
+`;
 
 const SocialMedia = styled.div`
   display: flex;
   justify-content: center;
-`
+`;
 
 const WidthContainer = styled.div`
   width: 100%;
-`
+`;
 
 const SocialMediaItem = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const SocialMediaItem = styled.div`
     width: 24px;
     height: 24px;
   }
-`
+`;
 
 const Line = styled.span`
   width: 55px;
@@ -56,7 +56,7 @@ const Line = styled.span`
   @media (min-width: 48rem) {
     margin: 0 0 15px 0;
   }
-`
+`;
 
 const Hero = () => {
   return (
@@ -74,9 +74,9 @@ const Hero = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        "Web Developer",
-                        "CMS Developer",
-                        "Mobile Developer",
+                        'Web Developer',
+                        'CMS Developer',
+                        'Mobile Developer',
                       ],
                       autoStart: true,
                       loop: true,
@@ -142,7 +142,7 @@ const Hero = () => {
         </HeroContainer>
       </FadeBottom>
     </Section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

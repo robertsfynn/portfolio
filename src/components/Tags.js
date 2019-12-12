@@ -1,6 +1,6 @@
-import React from "react"
-import styled from "styled-components"
-import { Paragraph } from "./Typograhpy"
+import React from 'react';
+import styled from 'styled-components';
+import { Paragraph } from './Typograhpy';
 
 const TagsContainer = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const TagsContainer = styled.div`
     align-items: start;
     justify-content: start;
   }
-`
+`;
 
 const TagContainer = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const TagContainer = styled.div`
     margin: 0;
     padding: 5px 10px;
   }
-`
+`;
 
 const Tags = ({ tags }) => {
   return (
@@ -37,7 +37,7 @@ const Tags = ({ tags }) => {
         </TagContainer>
       ))}
     </TagsContainer>
-  )
-}
+  );
+};
 
-export default Tags
+export default Tags;

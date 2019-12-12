@@ -1,8 +1,8 @@
-import React from "react"
-import { Container, Row, Col } from "react-awesome-styled-grid"
-import PortfolioItem from "./PortfolioItem"
-import { Header2, Section } from "./Typograhpy"
-import { FadeBottom } from "../animations"
+import React from 'react';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import PortfolioItem from './PortfolioItem';
+import { Header2, Section } from './Typograhpy';
+import { FadeBottom } from '../animations';
 
 const Portfolio = ({ items }) => {
   return (
@@ -13,7 +13,7 @@ const Portfolio = ({ items }) => {
         </FadeBottom>
         <Row>
           {items.map(({ node }, id) => {
-            const { title, description, previewImage } = node.frontmatter
+            const { title, description, previewImage } = node.frontmatter;
 
             return (
               <Col xs={12} sm={6} key={node.id}>
@@ -25,12 +25,12 @@ const Portfolio = ({ items }) => {
                   slug={node.fields.slug}
                 />
               </Col>
-            )
+            );
           })}
         </Row>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
-export default Portfolio
+export default Portfolio;

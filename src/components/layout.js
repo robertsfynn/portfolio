@@ -5,16 +5,16 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { ThemeProvider } from "styled-components"
-import Navbar from "./Navbar"
+import React from 'react';
+import PropTypes from 'prop-types';
+import { ThemeProvider } from 'styled-components';
+import Navbar from './Navbar';
 
 // import { useStaticQuery, graphql } from "gatsby"
 
-import "../css/layout.css"
-import "../css/style.css"
-import "../css/flickity.css"
+import '../css/layout.css';
+import '../css/style.css';
+import '../css/flickity.css';
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
   // `)
 
   const customConf = {
-    mediaQuery: "only screen",
+    mediaQuery: 'only screen',
     columns: {
       xs: 12,
       sm: 12,
@@ -51,8 +51,8 @@ const Layout = ({ children }) => {
       xl: 1.5,
     },
     container: {
-      xs: "full", // 'full' = max-width: 100%
-      sm: "full", // 'full' = max-width: 100%
+      xs: 'full', // 'full' = max-width: 100%
+      sm: 'full', // 'full' = max-width: 100%
       md: 64, // max-width: 1024px
       lg: 64, // max-width: 1024px
       xl: 64, // max-width: 1024px
@@ -64,7 +64,7 @@ const Layout = ({ children }) => {
       lg: 90, // 1440px
       xl: 120, // 1920px
     },
-  }
+  };
 
   return (
     <ThemeProvider theme={{ awesomegrid: customConf }}>
@@ -75,11 +75,11 @@ const Layout = ({ children }) => {
       <main>{children}</main>
       <footer></footer>
     </ThemeProvider>
-  )
-}
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
-export default Layout
+export default Layout;

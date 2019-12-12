@@ -1,17 +1,17 @@
-import React from "react"
-import { Container, Row, Col } from "react-awesome-styled-grid"
+import React from 'react';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
 import {
   Header2,
   Paragraph,
   Header6,
   WidthContainer,
   Section,
-} from "./Typograhpy"
-import styled from "styled-components"
-import mobileDevelopmentIcon from "../icons/mobile-app.svg"
-import webDevelopmentIcon from "../icons/html.svg"
-import cmsIcon from "../icons/computer.svg"
-import { FadeBottom } from "../animations"
+} from './Typograhpy';
+import styled from 'styled-components';
+import mobileDevelopmentIcon from '../icons/mobile-app.svg';
+import webDevelopmentIcon from '../icons/html.svg';
+import cmsIcon from '../icons/computer.svg';
+import { FadeBottom } from '../animations';
 
 const Icon = styled.img`
   width: 50px;
@@ -19,7 +19,7 @@ const Icon = styled.img`
   margin: auto;
   margin-bottom: 20px;
   display: block;
-`
+`;
 
 const AboutMe = () => {
   return (
@@ -83,7 +83,7 @@ const AboutMe = () => {
         </Row>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
-export default AboutMe
+export default AboutMe;

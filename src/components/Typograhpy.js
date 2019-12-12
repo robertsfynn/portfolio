@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from 'styled-components';
 
 export const Header1 = styled.h1`
   font-family: Roboto, sans-serif;
@@ -10,7 +10,7 @@ export const Header1 = styled.h1`
   color: #ffffff;
   margin: 0;
   color: ${({ tainted }) =>
-    tainted ? "rgba(255, 255, 255, 0.7)" : "rgb(255, 255, 255)"};
+    tainted ? 'rgba(255, 255, 255, 0.7)' : 'rgb(255, 255, 255)'};
   text-align: center;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
 
@@ -22,7 +22,7 @@ export const Header1 = styled.h1`
   @media (min-width: 64rem) {
     font-size: 68px;
   }
-`
+`;
 
 export const Header2 = styled.h2`
   font-family: Roboto, sans-serif;
@@ -38,7 +38,7 @@ export const Header2 = styled.h2`
     font-size: 50px;
     text-align: start;
   }
-`
+`;
 
 export const Header3 = styled.h3`
   font-family: Roboto, sans-serif;
@@ -52,7 +52,7 @@ export const Header3 = styled.h3`
   @media (min-width: 48rem) {
     text-align: start;
   }
-`
+`;
 
 export const Header5 = styled.h5`
   font-family: Roboto, sans-serif;
@@ -67,7 +67,7 @@ export const Header5 = styled.h5`
   @media (min-width: 48rem) {
     text-align: start;
   }
-`
+`;
 
 export const Header6 = styled.h6`
   font-family: Roboto, sans-serif;
@@ -79,32 +79,32 @@ export const Header6 = styled.h6`
   color: #ffffff;
   margin-top: ${({ marginTop }) => marginTop}px;
   text-align: center;
-`
+`;
 
 export const Paragraph = styled.p`
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  font-weight: ${({ bold }) => (bold ? "bold" : "normal")};
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
   line-height: 1.88;
   color: #ffffff;
-  opacity: ${({ tainted }) => (tainted ? "0.6" : "1")};
-  text-align: ${({ center }) => (center ? "center" : "start")};
+  opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
+  text-align: ${({ center }) => (center ? 'center' : 'start')};
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 25)}px;
   margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
 
   @media (max-width: 767px) {
     text-align: center;
   }
-`
+`;
 
 export const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")}px;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;
 
   @media (min-width: 64rem) {
     margin-bottom: 0;
   }
-`
+`;
 
 export const Section = styled.section`
   padding: 40px 0;
@@ -112,4 +112,4 @@ export const Section = styled.section`
   @media (min-width: 48rem) {
     padding: 110px 0;
   }
-`
+`;

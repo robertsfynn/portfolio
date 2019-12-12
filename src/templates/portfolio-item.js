@@ -1,43 +1,43 @@
-import React from "react"
-import { graphql } from "gatsby"
-import { Container, Row, Col } from "react-awesome-styled-grid"
-import styled from "styled-components"
-import Flickity from "react-flickity-component"
-import Img from "gatsby-image"
-import { Header1, Header3, Paragraph } from "../components/Typograhpy"
-import { FadeBottom } from "../animations"
-import Layout from "../components/layout"
-import Tags from "../components/Tags"
-import SEO from "../components/seo"
+import React from 'react';
+import { graphql } from 'gatsby';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import styled from 'styled-components';
+import Flickity from 'react-flickity-component';
+import Img from 'gatsby-image';
+import { Header1, Header3, Paragraph } from '../components/Typograhpy';
+import { FadeBottom } from '../animations';
+import Layout from '../components/layout';
+import Tags from '../components/Tags';
+import SEO from '../components/seo';
 
 const SmallContainer = styled.div`
   max-width: 670px;
   margin: auto;
   text-align: center;
-`
+`;
 
 const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : "0")}px;
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;
 
   @media (min-width: 64rem) {
     margin-bottom: 0;
   }
-`
+`;
 
 const flickityOptions = {
   pageDots: false,
-}
+};
 
 export default ({ data }) => {
-  const { html } = data.markdownRemark
+  const { html } = data.markdownRemark;
   const {
     title,
     description,
     technologies,
     preview,
     featuredImages,
-  } = data.markdownRemark.frontmatter
+  } = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
@@ -50,11 +50,7 @@ export default ({ data }) => {
               {description}
             </Paragraph>
           </SmallContainer>
-          <Flickity
-            className={"carousel"} // default ''
-            options={flickityOptions} // takes flickity options {}
-            static
-          >
+          <Flickity className={'carousel'} options={flickityOptions} static>
             {featuredImages.map(image => (
               <WidthContainer key={image.id}>
                 <Img fluid={image.childImageSharp.fluid} />
@@ -93,8 +89,8 @@ export default ({ data }) => {
         </Row>
       </Container>
     </Layout>
-  )
-}
+  );
+};
 
 export const query = graphql`
   query($slug: String!) {
@@ -116,4 +112,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

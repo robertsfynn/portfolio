@@ -1,13 +1,13 @@
-import React from "react"
-import { Container, Row, Col } from "react-awesome-styled-grid"
-import styled from "styled-components"
+import React from 'react';
+import { Container, Row, Col } from 'react-awesome-styled-grid';
+import styled from 'styled-components';
 import {
   Section,
   WidthContainer,
   Header2,
   Header5,
   Paragraph,
-} from "./Typograhpy"
+} from './Typograhpy';
 
 const Label = styled.label`
   border: 0px;
@@ -16,7 +16,7 @@ const Label = styled.label`
   color: #ffffff;
   margin-top: 30px;
   background: transparent;
-`
+`;
 
 const Input = styled.input`
   border: 0px;
@@ -26,7 +26,7 @@ const Input = styled.input`
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   margin-top: 30px;
   background: transparent;
-`
+`;
 
 const ContactForm = () => {
   return (
@@ -67,7 +67,7 @@ const ContactForm = () => {
         </Row>
       </Container>
     </Section>
-  )
-}
+  );
+};
 
-export default ContactForm
+export default ContactForm;
