@@ -1,10 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import { Container, Row, Col } from 'react-awesome-styled-grid';
+import { Container, Col } from 'react-awesome-styled-grid';
 import styled from 'styled-components';
 import Flickity from 'react-flickity-component';
 import Img from 'gatsby-image';
-import { Header1, Header3, Paragraph } from '../components/Typograhpy';
+import {
+  Header1,
+  Header3,
+  Paragraph,
+  StyledRow,
+} from '../components/Typograhpy';
 import { FadeBottom } from '../animations';
 import Layout from '../components/layout';
 import Tags from '../components/Tags';
@@ -58,7 +63,7 @@ export default ({ data }) => {
             ))}
           </Flickity>
         </FadeBottom>
-        <Row>
+        <StyledRow>
           <Col xs={12} sm={8}>
             <FadeBottom>
               <WidthContainer marginBottom={75}>
@@ -86,7 +91,7 @@ export default ({ data }) => {
               </WidthContainer>
             </FadeBottom>
           </Col>
-        </Row>
+        </StyledRow>
       </Container>
     </Layout>
   );

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Row } from 'react-awesome-styled-grid';
 
 export const Header1 = styled.h1`
   font-family: Roboto, sans-serif;
@@ -35,8 +36,9 @@ export const Header2 = styled.h2`
   text-align: center;
 
   @media (min-width: 48rem) {
+    margin-bottom: 40px;
     font-size: 50px;
-    text-align: start;
+    text-align: ${({ align }) => align};
   }
 `;
 
@@ -111,5 +113,12 @@ export const Section = styled.section`
 
   @media (min-width: 48rem) {
     padding: 110px 0;
+  }
+`;
+
+export const StyledRow = styled(Row)`
+  &&& {
+    margin-left: 0;
+    margin-right: 0;
   }
 `;

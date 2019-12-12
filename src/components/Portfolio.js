@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 import PortfolioItem from './PortfolioItem';
-import { Header2, Section } from './Typograhpy';
+import { Header2, Section, StyledRow } from './Typograhpy';
 import { FadeBottom } from '../animations';
 
 const Portfolio = ({ items }) => {
@@ -11,7 +11,7 @@ const Portfolio = ({ items }) => {
         <FadeBottom>
           <Header2>Portfolio</Header2>
         </FadeBottom>
-        <Row>
+        <StyledRow>
           {items.map(({ node }, id) => {
             const { title, description, previewImage } = node.frontmatter;
 
@@ -27,7 +27,7 @@ const Portfolio = ({ items }) => {
               </Col>
             );
           })}
-        </Row>
+        </StyledRow>
       </Container>
     </Section>
   );

@@ -7,6 +7,7 @@ import {
   Header2,
   Header5,
   Paragraph,
+  StyledRow,
 } from './Typograhpy';
 
 const Label = styled.label`
@@ -32,7 +33,7 @@ const ContactForm = () => {
   return (
     <Section id="contact-form">
       <Container>
-        <Row>
+        <StyledRow>
           <Col>
             <WidthContainer>
               <Header2>Contact Me</Header2>
@@ -64,7 +65,7 @@ const ContactForm = () => {
               </form>
             </WidthContainer>
           </Col>
-        </Row>
+        </StyledRow>
       </Container>
     </Section>
   );

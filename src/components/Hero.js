@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { FadeBottom } from '../animations';
 import { Container, Row, Col } from 'react-awesome-styled-grid';
 
-import { Header1, Header6, Section } from './Typograhpy';
+import { Header1, Header6, Section, StyledRow } from './Typograhpy';
 
 const HeroContainer = styled.div`
   margin-bottom: 100px;
@@ -64,7 +64,7 @@ const Hero = () => {
       <FadeBottom>
         <HeroContainer>
           <Container>
-            <Row>
+            <StyledRow>
               <Col md={10}>
                 <WidthContainer>
                   <Line />
@@ -137,7 +137,7 @@ const Hero = () => {
                   </SocialMedia>
                 </WidthContainer>
               </Col>
-            </Row>
+            </StyledRow>
           </Container>
         </HeroContainer>
       </FadeBottom>

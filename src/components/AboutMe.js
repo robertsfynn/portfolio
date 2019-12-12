@@ -6,6 +6,7 @@ import {
   Header6,
   WidthContainer,
   Section,
+  StyledRow,
 } from './Typograhpy';
 import styled from 'styled-components';
 import mobileDevelopmentIcon from '../icons/mobile-app.svg';
@@ -25,7 +26,7 @@ const AboutMe = () => {
   return (
     <Section id="about-me">
       <Container>
-        <Row>
+        <StyledRow>
           <Col sm={6}>
             <WidthContainer>
               <FadeBottom>
@@ -51,7 +52,7 @@ const AboutMe = () => {
                 </Paragraph>
               </FadeBottom>
               <FadeBottom>
-                <Row>
+                <StyledRow>
                   <Col xs={12} sm={4} justify="center">
                     <WidthContainer>
                       <Icon src={webDevelopmentIcon} alt="Web Development" />
@@ -76,11 +77,11 @@ const AboutMe = () => {
                       </Header6>
                     </WidthContainer>
                   </Col>
-                </Row>
+                </StyledRow>
               </FadeBottom>
             </WidthContainer>
           </Col>
-        </Row>
+        </StyledRow>
       </Container>
     </Section>
   );

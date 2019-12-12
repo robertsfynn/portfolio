@@ -1,6 +1,6 @@
 main {
   margin-top: 100px;
-  background: url("../images/bx-home.svg") no-repeat top;
+  background: url('../images/bx-home.svg') no-repeat top;
 }
 
 body {
@@ -37,8 +37,8 @@ section[id] {
     text-align: left;
   }
   section[id] {
-    padding: 60px 0;
-    margin-top: 0;
+    padding: 100px 0;
+    margin: 0;
   }
 }
 
@@ -61,7 +61,7 @@ section[id] {
 
 .block-reveal::after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   top: 0;
   width: 100%;

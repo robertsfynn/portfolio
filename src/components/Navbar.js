@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
-import { Container, Row, Col } from 'react-awesome-styled-grid';
+import { Container, Col } from 'react-awesome-styled-grid';
 import logo from '../icons/logo.svg';
 import Scrollspy from 'react-scrollspy';
+import { StyledRow } from './Typograhpy';
 
 const StyledNavbar = styled.nav`
   padding: 0;
@@ -79,6 +80,14 @@ const NavbarListItemAnchor = styled(Link)`
   }
 
   @media (min-width: 48rem) {
+    .is-current > & {
+      :after {
+        transform: scaleX(1);
+        transform-origin: 0% 100%;
+      }
+    }
+  }
+  @media (min-width: 64rem) {
     :hover,
     .is-current > & {
       :after {
@@ -144,7 +153,7 @@ const Navbar = () => {
   return (
     <StyledNavbar>
       <Container>
-        <Row>
+        <StyledRow>
           <Col xs={12} sm={2} align="center">
             <a href="/">
               <img src={logo} alt="Logo" style={{ margin: 0 }} />
@@ -162,7 +171,7 @@ const Navbar = () => {
           <StyledCol xs={12} sm={10} justify="center" open={open}>
             <NavbarList
               open={open}
-              items={['hero', 'about-me', 'portfolio']}
+              items={['hero', 'about-me', 'timeline', 'portfolio']}
               currentClassName="is-current"
             >
               <NavbarListItem>
@@ -176,13 +185,18 @@ const Navbar = () => {
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>
+                <NavbarListItemAnchor onClick={toggleNavbar} to="/#timeline">
+                  Timeline
+                </NavbarListItemAnchor>
+              </NavbarListItem>
+              <NavbarListItem>
                 <NavbarListItemAnchor onClick={toggleNavbar} to="/#portfolio">
                   Portfolio
                 </NavbarListItemAnchor>
               </NavbarListItem>
             </NavbarList>
           </StyledCol>
-        </Row>
+        </StyledRow>
       </Container>
     </StyledNavbar>
   );

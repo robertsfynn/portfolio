@@ -28,12 +28,14 @@ const TimelineItem = styled(animated.div)`
   left: 45px;
   bottom: -20px;
   width: calc(100% - 45px);
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   border-radius: 5px;
   display: flex;
   align-items: center;
   background-color: #252039;
   text-align: center;
+  flex-direction: column;
+
 
   @media (min-width: 48rem) {
     width: 300px;
@@ -69,10 +71,8 @@ const Points = styled(animated.div)`
 const TimelineDate = styled.div`
   position: absolute;
   background: #ff4952;
-  width: 100px;
-  height: 30px;
+  padding: 0 10px;
   top: -15px;
-  right: 15px;
   border-radius: 5px;
   display: flex;
   justify-content: center;
@@ -117,7 +117,7 @@ const AnimationLine = ({ children, inViewport, date }) => {
       <Points style={pointProps} />
       <TimelineItem style={itemProps}>
         <TimelineDate>
-          <Paragraph>{date}</Paragraph>
+          <Paragraph bold>{date}</Paragraph>
         </TimelineDate>
         {children}
       </TimelineItem>
