@@ -84,9 +84,17 @@ const SubmitButton = styled.button`
     display: inline-block;
     width: 20px;
     height: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
     background: url(${arrow}) no-repeat;
     background-size: contain;
+    transition: all 300ms ease-in-out;
+  }
+
+  :hover {
+    :after {
+      transform: translatex(7px);
+      transition: all 0.4s;
+    }
   }
 `;
 
