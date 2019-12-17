@@ -23,7 +23,6 @@ const HoverState = styled.div`
 const StyledPortfolioItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
   padding: 50px 45px;
-  margin-bottom: 30px;
 
   ${Button} {
     transition: all 0.4s;
@@ -60,6 +59,10 @@ const TextContainer = styled.div`
   max-width: 70%;
 `;
 
+const MarginContainer = styled.div`
+  margin-bottom: 30px;
+`;
+
 const colors = [
   'to bottom, #65b1ff, #2c65e7',
   '311deg, #766ced, #413ad6',
@@ -93,20 +96,22 @@ const PortfolioItem = ({ image, item, description, title, slug }) => {
   );
 
   return (
-    <Fade>
-      <BlockReveal>
-        <Link to={slug}>
-          <StyledPortfolioItem item={item}>
-            <FadeBottom delay={1000}>
-              {(item + 1) % 2 === 0 ? firstTemplate : secondTemplate}
-            </FadeBottom>
-            <HoverState>
-              <Button>View Project</Button>
-            </HoverState>
-          </StyledPortfolioItem>
-        </Link>
-      </BlockReveal>
-    </Fade>
+    <MarginContainer>
+      <Fade>
+        <BlockReveal>
+          <Link to={slug}>
+            <StyledPortfolioItem item={item}>
+              <FadeBottom delay={1000}>
+                {(item + 1) % 2 === 0 ? firstTemplate : secondTemplate}
+              </FadeBottom>
+              <HoverState>
+                <Button>View Project</Button>
+              </HoverState>
+            </StyledPortfolioItem>
+          </Link>
+        </BlockReveal>
+      </Fade>
+    </MarginContainer>
   );
 };
 
