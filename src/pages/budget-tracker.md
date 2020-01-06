@@ -6,13 +6,12 @@ preview: 'budget-tracker.info'
 previewImage: '../images/budget-tracker.png'
 featuredImages:
   [
-    '../images/budget-tracker/no-transactions.png',
-    '../images/budget-tracker/add-transaction.png',
     '../images/budget-tracker/transactions.png',
+    '../images/budget-tracker/add-transaction.png',
     '../images/budget-tracker/stats.png',
     '../images/budget-tracker/budget.png',
   ]
-item: 4
+item: 1
 ---
 
 When I wanted to start to track, where I spend my money, I went to the App Store and found mostly pay walls for simple stuff like statistics.
