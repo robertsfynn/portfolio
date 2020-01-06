@@ -85,6 +85,14 @@ export const Header6 = styled.h6`
   color: #ffffff;
   margin-top: ${({ marginTop }) => marginTop}px;
   text-align: center;
+
+  @media (min-width: 48rem) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 64rem) {
+    font-size: 18px;
+  }
 `;
 
 export const Paragraph = styled.p`

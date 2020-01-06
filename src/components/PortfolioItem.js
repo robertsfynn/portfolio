@@ -61,6 +61,7 @@ const TextContainer = styled.div`
 
 const MarginContainer = styled.div`
   margin-bottom: 30px;
+  width: 100%;
 `;
 
 const colors = [
@@ -71,30 +72,6 @@ const colors = [
 ];
 
 const PortfolioItem = ({ image, item, description, title, slug }) => {
-  const firstTemplate = (
-    <StyledPortfolioContainer>
-      <WidthContainer>
-        <Img fluid={image} />
-      </WidthContainer>
-      <TextContainer>
-        <Header5>{title}</Header5>
-        <Paragraph>{description}</Paragraph>
-      </TextContainer>
-    </StyledPortfolioContainer>
-  );
-
-  const secondTemplate = (
-    <StyledPortfolioContainer>
-      <TextContainer>
-        <Header5>{title}</Header5>
-        <Paragraph>{description}</Paragraph>
-      </TextContainer>
-      <WidthContainer>
-        <Img fluid={image} />
-      </WidthContainer>
-    </StyledPortfolioContainer>
-  );
-
   return (
     <MarginContainer>
       <Fade>
@@ -102,7 +79,11 @@ const PortfolioItem = ({ image, item, description, title, slug }) => {
           <Link to={slug}>
             <StyledPortfolioItem item={item}>
               <FadeBottom delay={1000}>
-                {(item + 1) % 2 === 0 ? firstTemplate : secondTemplate}
+                <StyledPortfolioContainer>
+                  <WidthContainer>
+                    <Img fluid={image} />
+                  </WidthContainer>
+                </StyledPortfolioContainer>
               </FadeBottom>
               <HoverState>
                 <Button>View Project</Button>

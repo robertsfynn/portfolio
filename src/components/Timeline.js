@@ -37,13 +37,17 @@ const Timeline = () => {
             </Paragraph>
             <Paragraph center>Wirtschaftsinformatik (Bachelor)</Paragraph>
           </Line>
+          <Line threshold={1} date="January 2018 - present">
+            <Paragraph bold marginBottom={1}>
+              Freelance Developer
+            </Paragraph>
+            <Paragraph center>Web Developer</Paragraph>
+          </Line>
           <Line threshold={1} date="March 2018 - July 2018">
             <Paragraph bold marginBottom={1}>
               myHotelo
             </Paragraph>
-            <Paragraph center>
-              Frontend Developer <br /> (Working Student)
-            </Paragraph>
+            <Paragraph center>Frontend Developer</Paragraph>
           </Line>
           <Line threshold={1} date="July 2018 - present">
             <Paragraph bold marginBottom={1}>
@@ -52,12 +56,6 @@ const Timeline = () => {
             <Paragraph center>
               Frontend Developer <br /> (Working Student)
             </Paragraph>
-          </Line>
-          <Line threshold={1} date="January 2018 - present">
-            <Paragraph bold marginBottom={1}>
-              Freelance Debeloper
-            </Paragraph>
-            <Paragraph center>Web Developer</Paragraph>
           </Line>
         </StyledTimeline>
       </Container>

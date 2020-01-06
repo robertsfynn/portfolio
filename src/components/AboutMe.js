@@ -32,10 +32,9 @@ const AboutMe = () => {
               <FadeBottom>
                 <Header2>About me</Header2>
                 <Paragraph tainted>
-                  Yeah, but your scientists were so preoccupied with whether or
-                  not they could, they didn't stop to think if they should. You
-                  know what? It is beets. I've crashed into a beet truck. I was
-                  part of something special. I was part of something special.
+                  I'm a 24 year old Business Informatics student in Berlin,
+                  Germany. I'm a Javascript enthusiast, with experience with
+                  React, Node ... (todo)
                 </Paragraph>
               </FadeBottom>
             </WidthContainer>
@@ -44,12 +43,6 @@ const AboutMe = () => {
             <WidthContainer>
               <FadeBottom>
                 <Header2>What I Do</Header2>
-                <Paragraph marginBottom={50} tainted>
-                  Yeah, but your scientists were so preoccupied with whether or
-                  not they could, they didn't stop to think if they should. You
-                  know what? It is beets. I've crashed into a beet truck. I was
-                  part of something special. I was part of something special.
-                </Paragraph>
               </FadeBottom>
               <FadeBottom>
                 <StyledRow>

@@ -7,6 +7,7 @@ const BlockRevealContainer = styled.div`
   position: relative;
   display: inline-block;
   overflow: hidden;
+  width: 100%;
 `
 
 const BlockRevealItem = styled(animated.div)`

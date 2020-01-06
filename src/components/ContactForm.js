@@ -63,12 +63,14 @@ const Input = styled.input`
 `;
 
 const Textarea = styled.textarea`
+  font-family: 'Roboto', sans-serif;
   border: 0px;
   border-radius: 0px;
   font-size: 16px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
   margin-top: 30px;
+  max-width: 100%;
   background: transparent;
 `;
 
