@@ -1,6 +1,6 @@
 ---
 title: 'Artifier'
-technologies: ['Gatsby', 'Netlify CMS']
+technologies: ['Gatsby', 'Netlify CMS', 'Lotty']
 description: 'Landing Page for a record label with animations, integrated into Netlify CMS.'
 preview: 'artifier.de'
 previewImage: '../images/artifier.png'
@@ -8,8 +8,8 @@ featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
 item: 2
 ---
 
-The designer must be an interpreter, and real and virtual needs must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.
+The job was to create a simple landing page, that uses animations to look modern and inviting.
 
-The Company is familiar with bad design is better than good. It is because of this, people prefer bad design good. They too got used to the fact that there is. Everything is new begins to scare, and their old consoles.
+Because Wordpress seemed overkill for such a simple page, I decided to use Gatsby with the Netlify CMS, to use the benefits of Gatsby but still have a CMS to let the client make easy changes.
 
-The designer must be an interpreter, must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.
+The page also uses parallax scrolling and Lottie to have a really nice logo animation to really stand out.

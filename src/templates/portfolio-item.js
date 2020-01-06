@@ -33,6 +33,8 @@ const WidthContainer = styled.div`
 
 const flickityOptions = {
   pageDots: false,
+  setGallerySize: false,
+  adaptiveHeight: true,
 };
 
 export default ({ data }) => {
@@ -58,9 +60,9 @@ export default ({ data }) => {
           </SmallContainer>
           <Flickity className={'carousel'} options={flickityOptions} static>
             {featuredImages.map(image => (
-              <WidthContainer key={image.id}>
+              <div style={{ width: '100%' }}>
                 <Img fluid={image.childImageSharp.fluid} />
-              </WidthContainer>
+              </div>
             ))}
           </Flickity>
         </FadeBottom>
@@ -112,7 +114,7 @@ export const query = graphql`
         featuredImages {
           id
           childImageSharp {
-            fluid(maxWidth: 1140) {
+            fluid(maxWidth: 750) {
               ...GatsbyImageSharpFluid
             }
           }

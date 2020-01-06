@@ -4,12 +4,12 @@ technologies: ['React', 'Firebase']
 description: 'Web Application to track transactions, keep budgets and see statistics'
 preview: 'budget-tracker.info'
 previewImage: '../images/budget-tracker.png'
-featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
+featuredImages: ['../images/budget-tracker/no-transactions.png']
 item: 4
 ---
 
-The designer must be an interpreter, and real and virtual needs must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.
+When I wanted to start to track, where I spend my money, I went to the App Store and found mostly pay walls for simple stuff like statistics.
+So I decided to develop my own solution in React and Firebase as a challenge.
 
-The Company is familiar with bad design is better than good. It is because of this, people prefer bad design good. They too got used to the fact that there is. Everything is new begins to scare, and their old consoles.
-
-The designer must be an interpreter, must anticipate those questions of people that they do not think, and suddenly opened in the already created objects.
+As one would mostly use the Tracker while not at home, it's mobile first, with a simple and clean UI.
+Shows statistics for what you spend the most money and lets you create budgets, so you never spend too much.

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { Paragraph, Header5, Button } from './Typograhpy';
+import { Button } from './Typograhpy';
 import { FadeBottom, BlockReveal, Fade } from '../animations';
 
 const HoverState = styled.div`
@@ -53,10 +53,6 @@ const StyledPortfolioContainer = styled.div`
 
 const WidthContainer = styled.div`
   width: 100%;
-`;
-
-const TextContainer = styled.div`
-  max-width: 70%;
 `;
 
 const MarginContainer = styled.div`
