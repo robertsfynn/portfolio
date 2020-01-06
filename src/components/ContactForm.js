@@ -83,11 +83,11 @@ const ContactForm = () => {
             <ContactContainer>
               <FadeBottom>
                 <Header2 align="left">Contact Me</Header2>
-                <Header5 marginBottom={1}>Mail</Header5>
+                <Header5 marginBottom={'0'}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
-                <Header5 marginBottom={1}>Github</Header5>
+                <Header5 marginBottom={'0'}>Github</Header5>
                 <Paragraph tainted>github.com/robertsfynn</Paragraph>
-                <Header5 marginBottom={1}>Mail</Header5>
+                <Header5 marginBottom={'0'}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
               </FadeBottom>
             </ContactContainer>

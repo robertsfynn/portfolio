@@ -87,7 +87,7 @@ export default ({ data }) => {
                   Technologies
                 </Paragraph>
                 <Tags tags={technologies} />
-                <Paragraph marginBottom={1} marginTop={20} bold>
+                <Paragraph marginBottom={'0'} marginTop={20} bold>
                   Preview
                 </Paragraph>
                 <Paragraph>

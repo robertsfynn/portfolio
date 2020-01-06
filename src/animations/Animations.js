@@ -52,7 +52,7 @@ const AnimatedFade = ({ children, inViewport, delay }) => {
 
 const AnimatedBlockReveal = ({ children, inViewport }) => {
   const animationProps = useSpring({
-    config: { mass: 1, tension: 280, friction: 90 },
+    config: config.molasses,
     to: [
       {
         transform: inViewport ? "translate(101%, 0)" : "translate(-101%, 0)",

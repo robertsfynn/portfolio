@@ -26,25 +26,23 @@ const AboutMe = () => {
   return (
     <Section id="about-me">
       <Container>
-        <StyledRow>
-          <Col sm={6}>
-            <WidthContainer>
-              <FadeBottom>
-                <Header2>About me</Header2>
-                <Paragraph tainted>
+        <FadeBottom>
+          <Header2>About me</Header2>
+          <StyledRow>
+            <Col sm={6}>
+              <WidthContainer>
+                <Paragraph tainted marginBottom={'0'}>
                   I'm a 24 year old Business Informatics student in Berlin,
                   Germany. I'm a Javascript enthusiast, with experience with
-                  React, Node ... (todo)
+                  React, Node ... (todo) Lorem, ipsum dolor sit amet consectetur
+                  adipisicing elit. Commodi, quae amet quidem et sint numquam
+                  tempora? Tenetur earum, voluptas ex illum consequatur nisi
+                  laudantium tempore consequuntur quae dolorem odit quos?
                 </Paragraph>
-              </FadeBottom>
-            </WidthContainer>
-          </Col>
-          <Col sm={6}>
-            <WidthContainer>
-              <FadeBottom>
-                <Header2>What I Do</Header2>
-              </FadeBottom>
-              <FadeBottom>
+              </WidthContainer>
+            </Col>
+            <Col sm={6} align="center">
+              <WidthContainer>
                 <StyledRow>
                   <Col xs={12} sm={4} justify="center">
                     <WidthContainer>
@@ -71,10 +69,10 @@ const AboutMe = () => {
                     </WidthContainer>
                   </Col>
                 </StyledRow>
-              </FadeBottom>
-            </WidthContainer>
-          </Col>
-        </StyledRow>
+              </WidthContainer>
+            </Col>
+          </StyledRow>
+        </FadeBottom>
       </Container>
     </Section>
   );
