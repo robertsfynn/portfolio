@@ -31,7 +31,7 @@ const AboutMe = () => {
           <StyledRow>
             <Col sm={6}>
               <WidthContainer>
-                <Paragraph tainted marginBottom={'0'}>
+                <Paragraph tainted>
                   I'm a 24 year old Business Informatics student in Berlin,
                   Germany. I'm a Javascript enthusiast, with experience with
                   React, Node ... (todo) Lorem, ipsum dolor sit amet consectetur
