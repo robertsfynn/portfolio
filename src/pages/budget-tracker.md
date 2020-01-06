@@ -4,7 +4,14 @@ technologies: ['React', 'Firebase']
 description: 'Web Application to track transactions, keep budgets and see statistics'
 preview: 'budget-tracker.info'
 previewImage: '../images/budget-tracker.png'
-featuredImages: ['../images/budget-tracker/no-transactions.png']
+featuredImages:
+  [
+    '../images/budget-tracker/no-transactions.png',
+    '../images/budget-tracker/add-transaction.png',
+    '../images/budget-tracker/transactions.png',
+    '../images/budget-tracker/stats.png',
+    '../images/budget-tracker/budget.png',
+  ]
 item: 4
 ---
 

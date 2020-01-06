@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { Container, Col } from 'react-awesome-styled-grid';
 import styled from 'styled-components';
 import Flickity from 'react-flickity-component';
-import Img from 'gatsby-image';
+import Img from 'gatsby-image/withIEPolyfill';
 import {
   Header1,
   Header3,
@@ -31,10 +31,14 @@ const WidthContainer = styled.div`
   }
 `;
 
+const CarouselCell = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
 const flickityOptions = {
   pageDots: false,
   setGallerySize: false,
-  adaptiveHeight: true,
 };
 
 export default ({ data }) => {
@@ -60,9 +64,13 @@ export default ({ data }) => {
           </SmallContainer>
           <Flickity className={'carousel'} options={flickityOptions} static>
             {featuredImages.map(image => (
-              <div style={{ width: '100%' }}>
-                <Img fluid={image.childImageSharp.fluid} />
-              </div>
+              <CarouselCell>
+                <Img
+                  style={{ height: '100%' }}
+                  fluid={image.childImageSharp.fluid}
+                  objectFit="contain"
+                />
+              </CarouselCell>
             ))}
           </Flickity>
         </FadeBottom>
@@ -114,7 +122,7 @@ export const query = graphql`
         featuredImages {
           id
           childImageSharp {
-            fluid(maxWidth: 750) {
+            fluid(maxWidth: 1152, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
