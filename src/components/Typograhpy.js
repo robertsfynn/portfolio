@@ -111,6 +111,19 @@ export const Paragraph = styled.p`
   }
 `;
 
+export const Anchor = styled.a`
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
+  color: #ff4952;
+  transition: all 0.5s;
+  display: block;
+
+  :hover {
+    margin-left: 5px;
+  }
+`;
+
 export const WidthContainer = styled.div`
   width: 100%;
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;

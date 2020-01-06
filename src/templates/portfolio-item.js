@@ -9,6 +9,7 @@ import {
   Header3,
   Paragraph,
   StyledRow,
+  Anchor,
 } from '../components/Typograhpy';
 import { FadeBottom } from '../animations';
 import Layout from '../components/layout';
@@ -87,7 +88,9 @@ export default ({ data }) => {
                 <Paragraph marginBottom={1} marginTop={20} bold>
                   Preview
                 </Paragraph>
-                <Paragraph>{preview}</Paragraph>
+                <Paragraph>
+                  <Anchor href={`https://${preview}`}>{preview}</Anchor>
+                </Paragraph>
               </WidthContainer>
             </FadeBottom>
           </Col>
