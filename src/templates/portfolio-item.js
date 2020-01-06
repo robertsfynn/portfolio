@@ -64,7 +64,7 @@ export default ({ data }) => {
           </SmallContainer>
           <Flickity className={'carousel'} options={flickityOptions} static>
             {featuredImages.map(image => (
-              <CarouselCell>
+              <CarouselCell key={image.id}>
                 <Img
                   style={{ height: '100%' }}
                   fluid={image.childImageSharp.fluid}
@@ -122,7 +122,7 @@ export const query = graphql`
         featuredImages {
           id
           childImageSharp {
-            fluid(maxWidth: 1250, maxHeight: 600, quality: 100) {
+            fluid(maxWidth: 750, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
