@@ -68,7 +68,7 @@ const Hero = () => {
               <Col md={10}>
                 <WidthContainer>
                   <Line />
-                  <Header1 align="start" marginBottom={1} tainted>
+                  <Header1 align="left" marginBottom={1} tainted>
                     Hello, I’m Fynn Roberts
                   </Header1>
                   <Typewriter

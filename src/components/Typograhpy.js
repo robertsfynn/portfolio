@@ -55,7 +55,7 @@ export const Header3 = styled.h3`
   text-align: center;
 
   @media (min-width: 48rem) {
-    text-align: start;
+    text-align: left;
   }
 `;
 
@@ -71,7 +71,7 @@ export const Header5 = styled.h5`
   margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
 
   @media (min-width: 48rem) {
-    text-align: start;
+    text-align: left;
   }
 `;
 

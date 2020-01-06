@@ -80,7 +80,7 @@ const ContactForm = () => {
           <Col xs={12} sm={5}>
             <ContactContainer>
               <FadeBottom>
-                <Header2 align="start">Contact Me</Header2>
+                <Header2 align="left">Contact Me</Header2>
                 <Header5 marginBottom={1}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
                 <Header5 marginBottom={1}>Github</Header5>
