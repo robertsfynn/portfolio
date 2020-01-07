@@ -12,6 +12,7 @@ featuredImages:
     '../images/budget-tracker/budget.png',
   ]
 item: 1
+isMobile: true
 ---
 
 When I wanted to start to track, where I spend my money, I went to the App Store and found mostly pay walls for simple stuff like statistics.

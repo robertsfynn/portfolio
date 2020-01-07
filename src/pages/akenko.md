@@ -4,8 +4,10 @@ technologies: ['React Native', 'Redux', 'Typescript']
 description: 'Mobile App to create and track workouts'
 preview: 'github.com/robertsfynn/akenko'
 previewImage: '../images/kenko.png'
-featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
+featuredImages:
+  ['../images/artifier/header.png', '../images/artifier/artist.png']
 item: 4
+isMobile: false
 ---
 
 To try out React Native and Typescript, I wanted to create a project for a hobby of mine, which is fitness.

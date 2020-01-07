@@ -38,7 +38,6 @@ const CarouselCell = styled.div`
 
 const flickityOptions = {
   pageDots: false,
-  setGallerySize: false,
 };
 
 export default ({ data }) => {
@@ -49,8 +48,9 @@ export default ({ data }) => {
     technologies,
     preview,
     featuredImages,
+    isMobile,
   } = data.markdownRemark.frontmatter;
-
+  console.log(isMobile);
   return (
     <Layout>
       <SEO title={title} />
@@ -62,7 +62,11 @@ export default ({ data }) => {
               {description}
             </Paragraph>
           </SmallContainer>
-          <Flickity className={'carousel'} options={flickityOptions} static>
+          <Flickity
+            className={`carousel ${isMobile ? 'isMobile' : ''}`}
+            options={flickityOptions}
+            static
+          >
             {featuredImages.map(image => (
               <CarouselCell key={image.id}>
                 <Img
@@ -119,6 +123,7 @@ export const query = graphql`
         description
         technologies
         preview
+        isMobile
         featuredImages {
           id
           childImageSharp {

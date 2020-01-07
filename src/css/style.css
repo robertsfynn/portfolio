@@ -98,5 +98,24 @@ a {
 
 .carousel {
   margin-bottom: 25px;
+  height: 250px;
+}
+
+@media (min-width: 48rem) {
+  .carousel {
+    margin-bottom: 25px;
+    height: 450px;
+  }
+}
+
+@media (min-width: 64rem) {
+  .carousel {
+    margin-bottom: 25px;
+    height: 600px;
+  }
+}
+
+
+.carousel.isMobile {
   height: 600px;
 }
