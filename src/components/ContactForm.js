@@ -82,7 +82,7 @@ const ContactForm = () => {
           <Col xs={12} sm={5}>
             <ContactContainer>
               <FadeBottom>
-                <Header2 align="left">Contact Me</Header2>
+                <Header2 align="left">Contact me</Header2>
                 <Header5 marginBottom={'0'}>Mail</Header5>
                 <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
                 <Header5 marginBottom={'0'}>Github</Header5>
@@ -102,7 +102,7 @@ const ContactForm = () => {
                     <Input required type="text" name="name" />
                   </InputContainer>
                   <InputContainer>
-                    <Label htmlFor="email">Your Email:</Label>
+                    <Label htmlFor="email">Email:</Label>
                     <Input required type="email" name="email" />
                   </InputContainer>
                   <InputContainer>

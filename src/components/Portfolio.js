@@ -6,10 +6,10 @@ import { FadeBottom } from '../animations';
 
 const Portfolio = ({ items }) => {
   return (
-    <Section id="portfolio">
+    <Section id="projects">
       <Container>
         <FadeBottom>
-          <Header2>Portfolio</Header2>
+          <Header2>Projects</Header2>
         </FadeBottom>
         <StyledRow>
           {items.map(({ node }, id) => {

@@ -175,7 +175,7 @@ const Navbar = () => {
                 'hero',
                 'about-me',
                 'timeline',
-                'portfolio',
+                'projects',
                 'contact-form',
               ]}
               currentClassName="is-current"
@@ -197,8 +197,8 @@ const Navbar = () => {
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>
-                <NavbarListItemAnchor onClick={toggleNavbar} to="/#portfolio">
-                  Portfolio
+                <NavbarListItemAnchor onClick={toggleNavbar} to="/#projects">
+                  Projects
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>

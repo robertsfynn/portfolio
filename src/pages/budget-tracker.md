@@ -15,7 +15,7 @@ item: 1
 isMobile: true
 ---
 
-When I wanted to start to track, where I spend my money, I went to the App Store and found mostly pay walls for simple stuff like statistics.
+When I wanted to start tracking, where I spend my money, I went to the App Store and found mostly pay walls for simple stuff like statistics.
 So I decided to develop my own solution in React and Firebase as a challenge.
 
 As one would mostly use the Tracker while not at home, it's mobile first, with a simple and clean UI.

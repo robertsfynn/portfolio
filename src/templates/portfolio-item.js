@@ -50,7 +50,6 @@ export default ({ data }) => {
     featuredImages,
     isMobile,
   } = data.markdownRemark.frontmatter;
-  console.log(isMobile);
   return (
     <Layout>
       <SEO title={title} />
@@ -103,7 +102,13 @@ export default ({ data }) => {
                   Preview
                 </Paragraph>
                 <Paragraph>
-                  <Anchor href={`https://${preview}`}>{preview}</Anchor>
+                  <Anchor
+                    href={`https://${preview}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {preview}
+                  </Anchor>
                 </Paragraph>
               </WidthContainer>
             </FadeBottom>

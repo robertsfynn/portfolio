@@ -37,7 +37,7 @@ const AboutMe = () => {
                   React, Node ... (todo) Lorem, ipsum dolor sit amet consectetur
                   adipisicing elit. Commodi, quae amet quidem et sint numquam
                   tempora? Tenetur earum, voluptas ex illum consequatur nisi
-                  laudantium tempore consequuntur quae dolorem odit quos?
+                  laudantium tempore consequuntur quae dolorem odit? 
                 </Paragraph>
               </WidthContainer>
             </Col>

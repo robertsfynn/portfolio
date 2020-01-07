@@ -92,6 +92,8 @@ const Hero = () => {
                     <a
                       href="https://github.com/robertsfynn"
                       aria-label="Link to my Github Account"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <SocialMediaItem>
                         <svg
@@ -105,8 +107,10 @@ const Hero = () => {
                       </SocialMediaItem>
                     </a>
                     <a
-                      href="https://www.linkedin.com/"
+                      href="https://www.linkedin.com/in/fynn-roberts-1474b1175/"
                       aria-label="Link to my LinkedIn Account"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <SocialMediaItem>
                         <svg
@@ -120,8 +124,10 @@ const Hero = () => {
                       </SocialMediaItem>
                     </a>
                     <a
-                      href="https://www.twitter.com/"
+                      href="https://twitter.com/fynn_roberts"
                       aria-label="Link to my Twitter Account"
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <SocialMediaItem>
                         <svg

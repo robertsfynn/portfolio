@@ -26,7 +26,8 @@ const StyledTimeline = styled(animated.li)`
 const TimelineItem = styled(animated.div)`
   position: absolute;
   left: 45px;
-  bottom: -20px;
+  bottom: 0;
+  transform: translateY(50%) translateY(-10px);;
   width: calc(100% - 45px);
   padding: 30px 20px 20px 20px;
   border-radius: 5px;
