@@ -1,6 +1,6 @@
 ---
 title: 'Artifier'
-technologies: ['Gatsby', 'Netlify CMS', 'Lotty']
+technologies: ['Gatsby', 'Netlify CMS', 'Lottie']
 description: 'Landing Page for a record label with animations, integrated into Netlify CMS.'
 preview: 'artifier.de'
 previewImage: '../images/artifier.png'

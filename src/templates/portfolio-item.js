@@ -40,6 +40,22 @@ const PortfolioContainer = styled(Container)`
   margin-bottom: 4rem;
 `;
 
+const ParagraphDiv = styled.div`
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: ${({ bold }) => (bold ? 'bold' : 'normal')};
+  line-height: 1.88;
+  color: #ffffff;
+  opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
+  text-align: ${({ center }) => (center ? 'center' : 'start')};
+  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 25)}px;
+  margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+`;
+
 const flickityOptions = {
   pageDots: false,
 };
@@ -86,10 +102,10 @@ export default ({ data }) => {
             <FadeBottom>
               <WidthContainer marginBottom={75}>
                 <Header3>Description</Header3>
-                <Paragraph
+                <ParagraphDiv
                   tainted
                   dangerouslySetInnerHTML={{ __html: html }}
-                ></Paragraph>
+                />
               </WidthContainer>
             </FadeBottom>
           </Col>
