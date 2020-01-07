@@ -22,6 +22,14 @@ const Icon = styled.img`
   display: block;
 `;
 
+const AboutMeParagraph = styled(Paragraph)`
+  margin-bottom: 25px;
+
+  @media (min-width: 48rem) {
+    margin-bottom: 0;
+  }
+`;
+
 const AboutMe = () => {
   return (
     <Section id="about-me">
@@ -31,14 +39,14 @@ const AboutMe = () => {
           <StyledRow>
             <Col sm={6}>
               <WidthContainer>
-                <Paragraph tainted>
-                  I'm a 24 year old Business Informatics student in Berlin,
-                  Germany. I'm a Javascript enthusiast, with experience with
-                  React, Node ... (todo) Lorem, ipsum dolor sit amet consectetur
-                  adipisicing elit. Commodi, quae amet quidem et sint numquam
-                  tempora? Tenetur earum, voluptas ex illum consequatur nisi
-                  laudantium tempore consequuntur quae dolorem odit? 
-                </Paragraph>
+                <AboutMeParagraph tainted>
+                  I'm a 24 year old business informatics student from Berlin,
+                  Germany. I'm a Javascript enthusiast and specialized in
+                  creating web applications. During my studies I've already been
+                  able to gain some professional experience. Besides my work as
+                  a working student in different startups I've also worked on
+                  various projects - please take a look down below!
+                </AboutMeParagraph>
               </WidthContainer>
             </Col>
             <Col sm={6} align="center">
@@ -47,7 +55,11 @@ const AboutMe = () => {
                   <Col xs={12} sm={4} justify="center">
                     <WidthContainer>
                       <Icon src={webDevelopmentIcon} alt="Web Development" />
-                      <Header6>Web Development</Header6>
+                      <Header6>
+                        Web
+                        <br />
+                        Development
+                      </Header6>
                     </WidthContainer>
                   </Col>
                   <Col xs={12} sm={4}>
@@ -56,7 +68,11 @@ const AboutMe = () => {
                         src={mobileDevelopmentIcon}
                         alt="Mobile Development"
                       />
-                      <Header6>Mobile Development</Header6>
+                      <Header6>
+                        Mobile
+                        <br />
+                        Development
+                      </Header6>
                     </WidthContainer>
                   </Col>
                   <Col xs={12} sm={4}>
@@ -64,7 +80,8 @@ const AboutMe = () => {
                       <Icon src={cmsIcon} alt="CMS" />
                       <Header6>
                         CMS
-                        <br /> Developer
+                        <br />
+                        Developer
                       </Header6>
                     </WidthContainer>
                   </Col>

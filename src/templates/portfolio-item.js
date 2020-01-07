@@ -36,6 +36,10 @@ const CarouselCell = styled.div`
   height: 100%;
 `;
 
+const PortfolioContainer = styled(Container)`
+  margin-bottom: 4rem;
+`;
+
 const flickityOptions = {
   pageDots: false,
 };
@@ -53,7 +57,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <Container>
+      <PortfolioContainer>
         <FadeBottom>
           <Header1 align="center">{title}</Header1>
           <SmallContainer>
@@ -114,7 +118,7 @@ export default ({ data }) => {
             </FadeBottom>
           </Col>
         </StyledRow>
-      </Container>
+      </PortfolioContainer>
     </Layout>
   );
 };
