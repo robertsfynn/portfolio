@@ -2,12 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
-import { Button } from './Typograhpy';
+import { Button, Header3, Header2 } from './Typograhpy';
 import { FadeBottom, BlockReveal, Fade } from '../animations';
 
 const HoverState = styled.div`
   transition: all 0.4s;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,6 +17,7 @@ const HoverState = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
 const StyledPortfolioItem = styled.div`
@@ -30,6 +30,12 @@ const StyledPortfolioItem = styled.div`
     transform: translateY(20px);
   }
 
+  ${Header2} {
+    transition: all 0.4s;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
   :hover {
     ${HoverState} {
       transition: all 0.4s;
@@ -37,6 +43,12 @@ const StyledPortfolioItem = styled.div`
     }
 
     ${Button} {
+      transition: all 0.4s;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    ${Header2} {
       transition: all 0.4s;
       transform: translateY(0);
       opacity: 1;
@@ -82,6 +94,7 @@ const PortfolioItem = ({ image, item, description, title, slug }) => {
                 </StyledPortfolioContainer>
               </FadeBottom>
               <HoverState>
+                <Header2>{title}</Header2>
                 <Button>View Project</Button>
               </HoverState>
             </StyledPortfolioItem>

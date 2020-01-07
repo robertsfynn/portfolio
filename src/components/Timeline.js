@@ -35,7 +35,7 @@ const Timeline = () => {
             <Paragraph bold marginBottom={1}>
               TU Berlin
             </Paragraph>
-            <Paragraph center>Wirtschaftsinformatik (Bachelor)</Paragraph>
+            <Paragraph center>Buisness Informatics (Bachelor)</Paragraph>
           </Line>
           <Line threshold={1} date="January 2018 - present">
             <Paragraph bold marginBottom={1}>
