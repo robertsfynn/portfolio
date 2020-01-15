@@ -73,8 +73,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title={title} />
-      <PortfolioContainer>
-        <FadeBottom>
+      <FadeBottom>
+        <PortfolioContainer>
           <Header1 align="center">{title}</Header1>
           <SmallContainer>
             <Paragraph tainted center>
@@ -96,22 +96,18 @@ export default ({ data }) => {
               </CarouselCell>
             ))}
           </Flickity>
-        </FadeBottom>
-        <StyledRow>
-          <Col xs={12} sm={8}>
-            <FadeBottom>
-              <WidthContainer marginBottom={75}>
+          <StyledRow>
+            <Col xs={12} sm={8}>
+              <WidthContainer marginBottom={24}>
                 <Header3>Description</Header3>
                 <ParagraphDiv
                   tainted
                   dangerouslySetInnerHTML={{ __html: html }}
                 />
               </WidthContainer>
-            </FadeBottom>
-          </Col>
-          <Col sm={1}></Col>
-          <Col xs={12} sm={3}>
-            <FadeBottom>
+            </Col>
+            <Col sm={1}></Col>
+            <Col xs={12} sm={3}>
               <WidthContainer>
                 <Header3>Details</Header3>
                 <Paragraph marginBottom={10} bold>
@@ -131,10 +127,10 @@ export default ({ data }) => {
                   </Anchor>
                 </Paragraph>
               </WidthContainer>
-            </FadeBottom>
-          </Col>
-        </StyledRow>
-      </PortfolioContainer>
+            </Col>
+          </StyledRow>
+        </PortfolioContainer>
+      </FadeBottom>
     </Layout>
   );
 };
