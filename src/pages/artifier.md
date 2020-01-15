@@ -1,7 +1,7 @@
 ---
 title: 'Artifier'
 technologies: ['Gatsby', 'Netlify CMS', 'Lottie']
-description: 'Landing Page for a record label with animations, integrated into Netlify CMS.'
+description: 'Landing Page for a record label.'
 preview: 'artifier.de'
 previewImage: '../images/artifier.png'
 featuredImages:
@@ -9,9 +9,6 @@ featuredImages:
 item: 2
 isMobile: false
 ---
+The basic idea of the client was a simple landing page, which should be designed modern and minimalistic. Apart from a given design, I could decide for myself how the page would be implemented. I decided to use Gatsby and Netlify CMS because Wordpress seemed a bit too complex for such a simple landing page. This enabled me to take advantage of Gatsby and still offer the client the possibility to make changes easily and independently afterwards.
 
-The idea was to create a simple landing page, that uses animations to look modern and inviting.
-
-Because Wordpress seemed overkill for such a simple page, I decided to use Gatsby with the Netlify CMS, to use the benefits of Gatsby but still have a CMS to let the client make easy changes.
-
-The page also uses parallax scrolling and Lottie to have a really nice logo animation to really stand out.
+Furthermore, I used parallax scrolling on the page and added an appealing animation of the logo based on Lottie, which gives an inviting user experience.
