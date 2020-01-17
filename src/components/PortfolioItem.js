@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import { Button, Header2 } from './Typograhpy';
-import { FadeBottom, BlockReveal, Fade } from '../animations';
+import { BlockReveal } from '../animations';
 
 const HoverState = styled.div`
   transition: all 0.4s;
@@ -79,28 +79,24 @@ const colors = [
   '330deg, #ffe596, #ffbf00',
 ];
 
-const PortfolioItem = ({ image, item, description, title, slug }) => {
+const PortfolioItem = ({ image, item, title, slug }) => {
   return (
     <MarginContainer>
-      <Fade>
-        <BlockReveal>
-          <Link to={slug}>
-            <StyledPortfolioItem item={item}>
-              <FadeBottom delay={1000}>
-                <StyledPortfolioContainer>
-                  <WidthContainer>
-                    <Img fluid={image} />
-                  </WidthContainer>
-                </StyledPortfolioContainer>
-              </FadeBottom>
-              <HoverState>
-                <Header2>{title}</Header2>
-                <Button>View Project</Button>
-              </HoverState>
-            </StyledPortfolioItem>
-          </Link>
-        </BlockReveal>
-      </Fade>
+      <BlockReveal>
+        <Link to={slug}>
+          <StyledPortfolioItem item={item}>
+            <StyledPortfolioContainer>
+              <WidthContainer>
+                <Img fluid={image} />
+              </WidthContainer>
+            </StyledPortfolioContainer>
+            <HoverState>
+              <Header2>{title}</Header2>
+              <Button>View Project</Button>
+            </HoverState>
+          </StyledPortfolioItem>
+        </Link>
+      </BlockReveal>
     </MarginContainer>
   );
 };
