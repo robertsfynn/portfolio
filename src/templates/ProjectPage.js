@@ -36,7 +36,7 @@ const CarouselCell = styled.div`
   height: 100%;
 `;
 
-const PortfolioContainer = styled(Container)`
+const PorjectPageContainer = styled(Container)`
   margin-bottom: 4rem;
 `;
 
@@ -74,7 +74,7 @@ export default ({ data }) => {
     <Layout>
       <SEO title={title} />
       <FadeBottom>
-        <PortfolioContainer>
+        <PorjectPageContainer>
           <Header1 align="center">{title}</Header1>
           <SmallContainer>
             <Paragraph tainted center>
@@ -129,7 +129,7 @@ export default ({ data }) => {
               </WidthContainer>
             </Col>
           </StyledRow>
-        </PortfolioContainer>
+        </PorjectPageContainer>
       </FadeBottom>
     </Layout>
   );

@@ -20,7 +20,7 @@ const HoverState = styled.div`
   flex-direction: column;
 `;
 
-const StyledPortfolioItem = styled.div`
+const StyledProjectItem = styled.div`
   background-image: linear-gradient(${({ item }) => colors[item]});
   padding: 50px 45px;
 
@@ -56,7 +56,7 @@ const StyledPortfolioItem = styled.div`
   }
 `;
 
-const StyledPortfolioContainer = styled.div`
+const StyledProjectContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,26 +79,26 @@ const colors = [
   '330deg, #ffe596, #ffbf00',
 ];
 
-const PortfolioItem = ({ image, item, title, slug }) => {
+const ProjectItem = ({ image, item, title, slug }) => {
   return (
     <MarginContainer>
       <BlockReveal>
         <Link to={slug}>
-          <StyledPortfolioItem item={item}>
-            <StyledPortfolioContainer>
+          <StyledProjectItem item={item}>
+            <StyledProjectContainer>
               <WidthContainer>
                 <Img fluid={image} />
               </WidthContainer>
-            </StyledPortfolioContainer>
+            </StyledProjectContainer>
             <HoverState>
               <Header2>{title}</Header2>
               <Button>View Project</Button>
             </HoverState>
-          </StyledPortfolioItem>
+          </StyledProjectItem>
         </Link>
       </BlockReveal>
     </MarginContainer>
   );
 };
 
-export default PortfolioItem;
+export default ProjectItem;

@@ -1,10 +1,10 @@
 import React from 'react';
 import { Container, Col } from 'react-awesome-styled-grid';
-import PortfolioItem from './PortfolioItem';
+import ProjectItem from './ProjectItem';
 import { Header2, Section, StyledRow } from './Typograhpy';
 import { FadeBottom } from '../animations';
 
-const Portfolio = ({ items }) => {
+const Projects = ({ items }) => {
   return (
     <Section id="projects">
       <Container>
@@ -17,7 +17,7 @@ const Portfolio = ({ items }) => {
 
             return (
               <Col xs={12} sm={6} key={node.id}>
-                <PortfolioItem
+                <ProjectItem
                   image={previewImage.childImageSharp.fluid}
                   item={id}
                   title={title}
@@ -33,4 +33,4 @@ const Portfolio = ({ items }) => {
   );
 };
 
-export default Portfolio;
+export default Projects;

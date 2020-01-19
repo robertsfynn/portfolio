@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Hero from '../components/Hero';
-import Portfolio from '../components/Portfolio';
+import Projects from '../components/Projects';
 import AboutMe from '../components/AboutMe';
 import ContactForm from '../components/ContactForm';
 import SEO from '../components/seo';
@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => {
       <Hero />
       <AboutMe />
       <Timeline />
-      <Portfolio items={data.allMarkdownRemark.edges} />
+      <Projects items={data.allMarkdownRemark.edges} />
       <ContactForm />
     </Layout>
   );
