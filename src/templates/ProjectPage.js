@@ -117,15 +117,14 @@ export default ({ data }) => {
                 <Paragraph marginBottom={'0'} marginTop={20} bold>
                   Preview
                 </Paragraph>
-                <Paragraph>
-                  <Anchor
-                    href={`https://${preview}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {preview}
-                  </Anchor>
-                </Paragraph>
+                <Anchor
+                  center
+                  href={`https://${preview}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {preview}
+                </Anchor>
               </WidthContainer>
             </Col>
           </StyledRow>

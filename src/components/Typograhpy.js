@@ -120,9 +120,11 @@ export const Anchor = styled.a`
   display: block;
   cursor: pointer;
   text-align: ${({ center }) => (center ? 'center' : 'start')};
+  margin-bottom: ${({ marginBottom }) => marginBottom || 0}px;
+
 
   @media (min-width: 48rem) {
-    text-align: left;
+    text-align: start;
   }
 
   :after {

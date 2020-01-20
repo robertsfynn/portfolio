@@ -102,6 +102,7 @@ const ContactForm = () => {
                   href={`https://www.linkedin.com/in/fynn-roberts-1474b1175/`}
                   target="_blank"
                   rel="noopener noreferrer"
+                  marginBottom={24}
                 >
                   linkedin.com/fynn-roberts
                 </Anchor>
