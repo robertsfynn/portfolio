@@ -118,9 +118,24 @@ export const Anchor = styled.a`
   color: #ff4952;
   transition: all 0.5s;
   display: block;
+  cursor: pointer;
+
+  :after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    margin-left: 5px;
+    background: url(${arrow}) no-repeat;
+    background-size: contain;
+    transition: all 300ms ease-in-out;
+  }
 
   :hover {
-    margin-left: 5px;
+    :after {
+      transform: translatex(7px);
+      transition: all 0.4s;
+    }
   }
 `;
 

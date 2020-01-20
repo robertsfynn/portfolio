@@ -5,9 +5,9 @@ import {
   Section,
   Header2,
   Header5,
-  Paragraph,
   StyledRow,
   Button,
+  Anchor,
 } from './Typograhpy';
 import { FadeBottom } from '../animations';
 
@@ -84,11 +84,25 @@ const ContactForm = () => {
               <FadeBottom>
                 <Header2 align="left">Contact me</Header2>
                 <Header5 marginBottom={'0'}>Mail</Header5>
-                <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
+                <Anchor href="mailto:robertsfynn@gmail.com">
+                  robertsfynn@gmail.com
+                </Anchor>
                 <Header5 marginBottom={'0'}>Github</Header5>
-                <Paragraph tainted>github.com/robertsfynn</Paragraph>
-                <Header5 marginBottom={'0'}>Mail</Header5>
-                <Paragraph tainted>robertsfynn@gmail.com</Paragraph>
+                <Anchor
+                  href={`https://github.com/robertsfynn`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  github.com/robertsfynn
+                </Anchor>
+                <Header5 marginBottom={'0'}>LinkedIn</Header5>
+                <Anchor
+                  href={`https://www.linkedin.com/in/fynn-roberts-1474b1175/`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  linkedin.com/fynn-roberts
+                </Anchor>
               </FadeBottom>
             </ContactContainer>
           </Col>

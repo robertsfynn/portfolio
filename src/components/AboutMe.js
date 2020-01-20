@@ -79,7 +79,7 @@ const AboutMe = () => {
                     <WidthContainer>
                       <Icon src={cmsIcon} alt="CMS" />
                       <Header6>
-                        CMS
+                        Backend
                         <br />
                         Developer
                       </Header6>
