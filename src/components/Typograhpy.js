@@ -132,7 +132,7 @@ export const Anchor = styled.a`
     display: inline-block;
     width: 14px;
     height: 11px;
-    margin-left: 5px;
+    margin-left: 8px;
     background: url(${arrow}) no-repeat;
     background-size: contain;
     transition: all 300ms ease-in-out;
