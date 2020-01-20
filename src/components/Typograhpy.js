@@ -16,7 +16,7 @@ export const Header1 = styled.h1`
   color: ${({ tainted }) =>
     tainted ? 'rgba(255, 255, 255, 0.7)' : 'rgb(255, 255, 255)'};
   text-align: center;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 20}px;
 
   @media (min-width: 48rem) {
     text-align: ${({ align }) => align};
@@ -68,7 +68,7 @@ export const Header5 = styled.h5`
   letter-spacing: -1.5px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 20}px;
 
   @media (min-width: 48rem) {
     text-align: left;
@@ -103,8 +103,8 @@ export const Paragraph = styled.p`
   color: #ffffff;
   opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
   text-align: ${({ center }) => (center ? 'center' : 'start')};
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 25)}px;
-  margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 25}px;
+  margin-top: ${({ marginTop }) => marginTop || 0}px;
 
   @media (max-width: 767px) {
     text-align: center;
@@ -126,7 +126,7 @@ export const Anchor = styled.a`
 
 export const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || '0'}px;
 
   @media (min-width: 64rem) {
     margin-bottom: 0;

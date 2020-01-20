@@ -14,7 +14,7 @@ const withScroll = Wrapped => {
         tag="div"
         className="inview"
         onChange={onInViewChange}
-        threshold={props.threshold ? props.threshold : 0.1}
+        threshold={props.threshold || 0.1}
         triggerOnce={true}
       >
         <Wrapped {...props} inViewport={inViewport}>

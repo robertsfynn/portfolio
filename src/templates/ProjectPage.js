@@ -24,7 +24,7 @@ const SmallContainer = styled.div`
 
 const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || '0'}px;
 
   @media (min-width: 64rem) {
     margin-bottom: 0;
@@ -48,8 +48,8 @@ const ParagraphDiv = styled.div`
   color: #ffffff;
   opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
   text-align: ${({ center }) => (center ? 'center' : 'start')};
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 25)}px;
-  margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 25}px;
+  margin-top: ${({ marginTop }) => marginTop || 0}px;
 
   @media (max-width: 767px) {
     text-align: center;
