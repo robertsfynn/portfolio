@@ -84,11 +84,12 @@ const ContactForm = () => {
               <FadeBottom>
                 <Header2 align="left">Contact me</Header2>
                 <Header5 marginBottom={'0'}>Mail</Header5>
-                <Anchor href="mailto:robertsfynn@gmail.com">
+                <Anchor center href="mailto:robertsfynn@gmail.com">
                   robertsfynn@gmail.com
                 </Anchor>
                 <Header5 marginBottom={'0'}>Github</Header5>
                 <Anchor
+                  center
                   href={`https://github.com/robertsfynn`}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -97,6 +98,7 @@ const ContactForm = () => {
                 </Anchor>
                 <Header5 marginBottom={'0'}>LinkedIn</Header5>
                 <Anchor
+                  center
                   href={`https://www.linkedin.com/in/fynn-roberts-1474b1175/`}
                   target="_blank"
                   rel="noopener noreferrer"

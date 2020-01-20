@@ -119,6 +119,11 @@ export const Anchor = styled.a`
   transition: all 0.5s;
   display: block;
   cursor: pointer;
+  text-align: ${({ center }) => (center ? 'center' : 'start')};
+
+  @media (min-width: 48rem) {
+    text-align: left;
+  }
 
   :after {
     content: '';
