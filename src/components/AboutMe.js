@@ -41,11 +41,13 @@ const AboutMe = () => {
               <WidthContainer>
                 <AboutMeParagraph tainted>
                   I'm a 24 year old business informatics student from Berlin,
-                  Germany. I'm a Javascript enthusiast and specialized in
-                  creating web applications. During my studies I've already been
-                  able to gain some professional experience. Besides my work as
-                  a working student in different startups I've also worked on
-                  various projects - please take a look down below!
+                  Germany.
+                  <br />
+                  I'm a Javascript enthusiast and specialized in creating web
+                  applications. During my studies I've already been able to gain
+                  some professional experience. Besides my work as a working
+                  student in different startups I've also worked on various
+                  projects - please take a look down below!
                 </AboutMeParagraph>
               </WidthContainer>
             </Col>
