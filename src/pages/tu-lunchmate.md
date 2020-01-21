@@ -4,7 +4,12 @@ technologies: ['React', 'Firebase']
 description: 'Web Application to find students with similar interests and go to lunch together'
 preview: 'tu-lunchmate.netlify.com'
 previewImage: '../images/tu-lunchmate.png'
-featuredImages: ['../images/1152x740.png', '../images/1152x740_2.jpg']
+featuredImages:
+  [
+    '../images/lunchmate/main.png',
+    '../images/lunchmate/create-lunch.png',
+    '../images/lunchmate/joined.png',
+  ]
 item: 3
 isMobile: false
 ---
