@@ -36,6 +36,12 @@ const CarouselCell = styled.div`
   height: 100%;
 `;
 
+const ImageContainer = styled.div`
+  width: ${({ isMobile }) => (isMobile ? '278px' : '100%')};
+  height: 100%;
+  margin: auto;
+`;
+
 const PorjectPageContainer = styled(Container)`
   margin-bottom: 4rem;
 `;
@@ -88,11 +94,13 @@ export default ({ data }) => {
           >
             {featuredImages.map(image => (
               <CarouselCell key={image.id}>
-                <Img
-                  style={{ height: '100%' }}
-                  fluid={image.childImageSharp.fluid}
-                  objectFit="contain"
-                />
+                <ImageContainer isMobile={isMobile}>
+                  <Img
+                    style={{ height: '100%' }}
+                    fluid={image.childImageSharp.fluid}
+                    objectFit="contain"
+                  />
+                </ImageContainer>
               </CarouselCell>
             ))}
           </Flickity>
@@ -147,7 +155,7 @@ export const query = graphql`
         featuredImages {
           id
           childImageSharp {
-            fluid(maxWidth: 1100, quality: 100, maxHeight: 600) {
+            fluid(maxWidth: 1100, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
