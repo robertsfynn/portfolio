@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import('intersection-observer');
 import { InView } from 'react-intersection-observer';
 
 const withScroll = Wrapped => {
