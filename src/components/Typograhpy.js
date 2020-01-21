@@ -118,6 +118,7 @@ export const Anchor = styled.a`
   color: #ff4952;
   transition: all 0.5s;
   display: block;
+  margin-bottom: 1rem;
 
   :hover {
     margin-left: 5px;
