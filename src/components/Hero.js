@@ -74,8 +74,8 @@ const Hero = () => {
                   <Typewriter
                     options={{
                       strings: [
-                        'Web Developer',
-                        'CMS Developer',
+                        'Frontend Developer',
+                        'Backend Developer',
                         'Mobile Developer',
                       ],
                       autoStart: true,

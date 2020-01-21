@@ -21,7 +21,7 @@ const BlockRevealItem = styled(animated.div)`
 const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
   const animationProps = useSpring({
     config: config.slow,
-    delay: delay ? delay : 0,
+    delay: delay || 0,
     to: {
       opacity: inViewport ? 1 : 0,
       transform: inViewport ? "translateY(0)" : "translateY(40px)",
@@ -38,7 +38,7 @@ const AnimatedFadeBottom = ({ children, inViewport, delay }) => {
 const AnimatedFade = ({ children, inViewport, delay }) => {
   const animationProps = useSpring({
     config: config.slow,
-    delay: delay ? delay : 0,
+    delay: delay || 0,
     to: {
       opacity: inViewport ? 1 : 0,
     },

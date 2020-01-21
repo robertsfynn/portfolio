@@ -16,7 +16,7 @@ export const Header1 = styled.h1`
   color: ${({ tainted }) =>
     tainted ? 'rgba(255, 255, 255, 0.7)' : 'rgb(255, 255, 255)'};
   text-align: center;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 20}px;
 
   @media (min-width: 48rem) {
     text-align: ${({ align }) => align};
@@ -68,7 +68,7 @@ export const Header5 = styled.h5`
   letter-spacing: -1.5px;
   color: #ffffff;
   text-align: center;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 20)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 20}px;
 
   @media (min-width: 48rem) {
     text-align: left;
@@ -103,8 +103,8 @@ export const Paragraph = styled.p`
   color: #ffffff;
   opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
   text-align: ${({ center }) => (center ? 'center' : 'start')};
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : 25)}px;
-  margin-top: ${({ marginTop }) => (marginTop ? marginTop : 0)}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || 25}px;
+  margin-top: ${({ marginTop }) => marginTop || 0}px;
 
   @media (max-width: 767px) {
     text-align: center;
@@ -118,16 +118,37 @@ export const Anchor = styled.a`
   color: #ff4952;
   transition: all 0.5s;
   display: block;
+  cursor: pointer;
+  text-align: ${({ center }) => (center ? 'center' : 'start')};
   margin-bottom: 1rem;
 
+
+  @media (min-width: 48rem) {
+    text-align: start;
+  }
+
+  :after {
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 11px;
+    margin-left: 8px;
+    background: url(${arrow}) no-repeat;
+    background-size: contain;
+    transition: all 300ms ease-in-out;
+  }
+
   :hover {
-    margin-left: 5px;
+    :after {
+      transform: translatex(7px);
+      transition: all 0.4s;
+    }
   }
 `;
 
 export const WidthContainer = styled.div`
   width: 100%;
-  margin-bottom: ${({ marginBottom }) => (marginBottom ? marginBottom : '0')}px;
+  margin-bottom: ${({ marginBottom }) => marginBottom || '0'}px;
 
   @media (min-width: 64rem) {
     margin-bottom: 0;

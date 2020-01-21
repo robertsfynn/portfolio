@@ -11,7 +11,7 @@ import {
 import styled from 'styled-components';
 import mobileDevelopmentIcon from '../icons/mobile-app.svg';
 import webDevelopmentIcon from '../icons/html.svg';
-import cmsIcon from '../icons/computer.svg';
+import backendIcon from '../icons/computer.svg';
 import { FadeBottom } from '../animations';
 
 const Icon = styled.img`
@@ -77,9 +77,9 @@ const AboutMe = () => {
                   </Col>
                   <Col xs={12} sm={4}>
                     <WidthContainer>
-                      <Icon src={cmsIcon} alt="CMS" />
+                      <Icon src={backendIcon} alt="Backend Development" />
                       <Header6>
-                        CMS
+                        Backend
                         <br />
                         Developer
                       </Header6>
