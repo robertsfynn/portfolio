@@ -47,7 +47,7 @@ const ParagraphDiv = styled.div`
   line-height: 1.88;
   color: #ffffff;
   opacity: ${({ tainted }) => (tainted ? '0.6' : '1')};
-  text-align: ${({ center }) => (center ? 'center' : 'start')};
+  text-align: ${({ center }) => (center ? 'center' : 'left')};
   margin-bottom: ${({ marginBottom }) => marginBottom || 25}px;
   margin-top: ${({ marginTop }) => marginTop || 0}px;
 

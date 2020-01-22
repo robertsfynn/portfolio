@@ -31,6 +31,7 @@ const StyledCol = styled(Col)`
   @media (min-width: 48em) {
     margin-top: 0;
     max-height: 100%;
+    justify-content: flex-end;
   }
 `;
 
@@ -44,7 +45,6 @@ const NavbarList = styled(Scrollspy)`
   @media (min-width: 48rem) {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
   }
 `;
 
