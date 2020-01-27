@@ -23,7 +23,7 @@ const StyledNavbar = styled.nav`
 `;
 
 const StyledCol = styled(Col)`
-  max-height: ${({ open }) => (open ? '225px' : '0')};
+  max-height: ${({ open }) => (open ? '240px' : '0')};
   transition: max-height 0.3s linear;
   overflow: hidden;
   margin-top: 15px;
@@ -188,7 +188,7 @@ const Navbar = () => {
               </NavbarListItem>
               <NavbarListItem>
                 <NavbarListItemAnchor onClick={toggleNavbar} to="/#about-me">
-                  Services
+                  About me
                 </NavbarListItemAnchor>
               </NavbarListItem>
               <NavbarListItem>
