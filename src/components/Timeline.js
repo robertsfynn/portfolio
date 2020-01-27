@@ -10,7 +10,7 @@ const StyledTimeline = styled.ul`
   @media (min-width: 48rem) {
     > :nth-child(2n) li div:last-child {
       right: 45px;
-      left: initial;
+      left: auto;
     }
   }
 `;

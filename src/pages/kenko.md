@@ -5,9 +5,16 @@ description: 'Mobile App to create and track workouts'
 preview: 'github.com/robertsfynn/kenko'
 previewImage: '../images/kenko.png'
 featuredImages:
-  ['../images/artifier/header.png', '../images/artifier/artist.png']
+  [
+    '../images/kenko/empty.png',
+    '../images/kenko/add_exercises.png',
+    '../images/kenko/add_sets.png',
+    '../images/kenko/summary.png',
+    '../images/kenko/main.png',
+    '../images/kenko/in_progress.png',
+  ]
 item: 4
-isMobile: false
+isMobile: true
 ---
 
 The idea for this app was evolved when I wanted to learn more about React Native and Typescript. I planned to create a project that deals with one of my hobbies, fitness and makes it easier for me to see my progress in training. The app offers the possibility to create, execute and track your own workouts.

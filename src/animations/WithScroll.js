@@ -1,13 +1,13 @@
-import React, { useState } from "react"
-import { InView } from "react-intersection-observer"
+import React, { useState } from 'react';
+import { InView } from 'react-intersection-observer';
 
 const withScroll = Wrapped => {
   const WithScroll = ({ children, ...props }) => {
-    const [inViewport, setInViewport] = useState(false)
+    const [inViewport, setInViewport] = useState(false);
 
     const onInViewChange = inview => {
-      if (!inViewport && inview) setInViewport(true)
-    }
+      if (!inViewport && inview) setInViewport(true);
+    };
 
     return (
       <InView
@@ -21,9 +21,9 @@ const withScroll = Wrapped => {
           {children}
         </Wrapped>
       </InView>
-    )
-  }
-  return WithScroll
-}
+    );
+  };
+  return WithScroll;
+};
 
-export default withScroll
+export default withScroll;

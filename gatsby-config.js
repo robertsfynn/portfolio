@@ -5,6 +5,14 @@ module.exports = {
     author: `@robertsfynn`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-138655358-2',
+        head: true,
+        anonymize: true,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -34,6 +42,5 @@ module.exports = {
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    // `gatsby-plugin-offline`,
   ],
-}
+};
