@@ -154,7 +154,7 @@ const Navbar = () => {
     <StyledNavbar>
       <Container>
         <StyledRow>
-          <Col xs={12} sm={2} align="center">
+          <Col xs={12} sm={2} align="center" justify="center">
             <a href="/">
               <img src={logo} alt="Logo" style={{ margin: 0 }} />
             </a>
