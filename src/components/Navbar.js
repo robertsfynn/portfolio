@@ -143,6 +143,10 @@ const StyledBurger = styled.button`
   }
 `;
 
+const StyledBurgerCol = styled(Col)`
+  flex-direction: row;
+`;
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
@@ -154,7 +158,7 @@ const Navbar = () => {
     <StyledNavbar>
       <Container>
         <StyledRow>
-          <Col xs={12} sm={2} align="center" justify="center">
+          <StyledBurgerCol xs={12} sm={2} align="center" justify="center">
             <a href="/">
               <img src={logo} alt="Logo" style={{ margin: 0 }} />
             </a>
@@ -167,7 +171,7 @@ const Navbar = () => {
               <span></span>
               <span></span>
             </StyledBurger>
-          </Col>
+          </StyledBurgerCol>
           <StyledCol xs={12} sm={10} justify="center" open={open}>
             <NavbarList
               open={open}
