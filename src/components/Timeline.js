@@ -15,10 +15,14 @@ const StyledTimeline = styled.ul`
   }
 `;
 
+const TimelineContainer = styled(Container)`
+  margin-bottom: 80px;
+`;
+
 const Timeline = () => {
   return (
     <Section id="timeline">
-      <Container>
+      <TimelineContainer>
         <FadeBottom>
           <Header2 center marginBottom={50}>
             Timeline
@@ -58,7 +62,7 @@ const Timeline = () => {
             </Paragraph>
           </Line>
         </StyledTimeline>
-      </Container>
+      </TimelineContainer>
     </Section>
   );
 };
