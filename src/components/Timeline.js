@@ -29,12 +29,6 @@ const Timeline = () => {
           </Header2>
         </FadeBottom>
         <StyledTimeline>
-          <Line threshold={1} date="2008 - 2015">
-            <Paragraph bold marginBottom={1}>
-              Fichtenberg Oberschule
-            </Paragraph>
-            <Paragraph center>Abitur</Paragraph>
-          </Line>
           <Line threshold={1} date="2015-present">
             <Paragraph bold marginBottom={1}>
               TU Berlin
@@ -53,12 +47,21 @@ const Timeline = () => {
             </Paragraph>
             <Paragraph center>Frontend Developer</Paragraph>
           </Line>
-          <Line threshold={1} date="July 2018 - present">
+          <Line threshold={1} date="July 2018 - April 2020">
             <Paragraph bold marginBottom={1}>
               Lykon
             </Paragraph>
             <Paragraph center>
               Frontend Developer <br /> (Working Student)
+            </Paragraph>
+          </Line>
+          <Line threshold={1} date="April 2020 - present">
+            <Paragraph bold marginBottom={1}>
+              SAP
+            </Paragraph>
+            <Paragraph center>
+              Fullstack Developer
+              <br /> (Working Student)
             </Paragraph>
           </Line>
         </StyledTimeline>

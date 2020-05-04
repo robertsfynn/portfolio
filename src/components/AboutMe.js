@@ -83,7 +83,7 @@ const AboutMe = () => {
                       <Header6>
                         Backend
                         <br />
-                        Developer
+                        Development
                       </Header6>
                     </WidthContainer>
                   </Col>
