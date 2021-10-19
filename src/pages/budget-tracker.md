@@ -2,7 +2,7 @@
 title: 'Budget Tracker'
 technologies: ['React', 'Firebase']
 description: 'Web application to overview finances and control expenses'
-preview: 'budget-tracker.info'
+preview: 'budget-planner.netlify.app'
 previewImage: '../images/budget-tracker.png'
 featuredImages:
   [
