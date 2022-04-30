@@ -40,9 +40,6 @@ const AboutMe = () => {
             <Col sm={6}>
               <WidthContainer>
                 <AboutMeParagraph tainted>
-                  I'm a 24 year old business informatics student from Berlin,
-                  Germany.
-                  <br />
                   I'm a Javascript enthusiast and specialized in creating web
                   applications. During my studies I've already been able to gain
                   some professional experience. Besides my work as a working
