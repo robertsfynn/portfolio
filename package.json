@@ -10,7 +10,6 @@
     "gatsby": "^2.19.8",
     "gatsby-cli": "^2.8.27",
     "gatsby-image": "^2.2.39",
-    "gatsby-plugin-google-analytics": "^2.1.34",
     "gatsby-plugin-manifest": "^2.2.39",
     "gatsby-plugin-offline": "^3.0.32",
     "gatsby-plugin-react-helmet": "^3.1.21",
@@ -54,5 +53,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "resolutions": {
+    "minipass": "2.7.0"
   }
 }
