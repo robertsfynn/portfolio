@@ -29,23 +29,23 @@ const Timeline = () => {
           </Header2>
         </FadeBottom>
         <StyledTimeline>
-          <Line threshold={1} date="2015-present">
+          <Line threshold={1} date="June 2022 - present">
             <Paragraph bold marginBottom={1}>
-              TU Berlin
+              idealo
             </Paragraph>
-            <Paragraph center>Business Informatics (Bachelor)</Paragraph>
+            <Paragraph center>
+              Fullstack Developer
+              <br /> (Working Student)
+            </Paragraph>
           </Line>
-          <Line threshold={1} date="January 2018 - present">
+          <Line threshold={1} date="April 2020 - June 2022">
             <Paragraph bold marginBottom={1}>
-              Freelance Developer
+              SAP
             </Paragraph>
-            <Paragraph center>Web Developer</Paragraph>
-          </Line>
-          <Line threshold={1} date="March 2018 - July 2018">
-            <Paragraph bold marginBottom={1}>
-              myHotelo
+            <Paragraph center>
+              Fullstack Developer
+              <br /> (Working Student)
             </Paragraph>
-            <Paragraph center>Frontend Developer</Paragraph>
           </Line>
           <Line threshold={1} date="July 2018 - April 2020">
             <Paragraph bold marginBottom={1}>
@@ -55,14 +55,23 @@ const Timeline = () => {
               Frontend Developer <br /> (Working Student)
             </Paragraph>
           </Line>
-          <Line threshold={1} date="April 2020 - present">
+          <Line threshold={1} date="March 2018 - July 2018">
             <Paragraph bold marginBottom={1}>
-              SAP
+              myHotelo
             </Paragraph>
-            <Paragraph center>
-              Fullstack Developer
-              <br /> (Working Student)
+            <Paragraph center>Frontend Developer</Paragraph>
+          </Line>
+          <Line threshold={1} date="January 2018 - present">
+            <Paragraph bold marginBottom={1}>
+              Freelance Developer
             </Paragraph>
+            <Paragraph center>Web Developer</Paragraph>
+          </Line>
+          <Line threshold={1} date="2015-2022">
+            <Paragraph bold marginBottom={1}>
+              TU Berlin
+            </Paragraph>
+            <Paragraph center>Business Informatics (Bachelor)</Paragraph>
           </Line>
         </StyledTimeline>
       </TimelineContainer>

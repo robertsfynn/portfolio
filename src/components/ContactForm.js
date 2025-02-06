@@ -38,9 +38,8 @@ const ContactContainer = styled.div`
 
 const Label = styled.label`
   font-family: 'Roboto', sans-serif;
-  border: 0px;
-  border-radius: 0px;
-  font-size: 16px;
+  border: 0;
+  border-radius: 0;
   color: #ffffff;
   background: transparent;
   font-style: normal;
@@ -48,13 +47,12 @@ const Label = styled.label`
   font-size: 18px;
   line-height: 21px;
   text-align: justify;
-  color: #ffffff;
 `;
 
 const Input = styled.input`
   font-family: 'Roboto', sans-serif;
-  border: 0px;
-  border-radius: 0px;
+  border: 0;
+  border-radius: 0;
   font-size: 16px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
@@ -64,8 +62,8 @@ const Input = styled.input`
 
 const Textarea = styled.textarea`
   font-family: 'Roboto', sans-serif;
-  border: 0px;
-  border-radius: 0px;
+  border: 0;
+  border-radius: 0;
   font-size: 16px;
   color: #ffffff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);

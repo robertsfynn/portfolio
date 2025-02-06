@@ -9,7 +9,6 @@ import {
   StyledRow,
 } from './Typograhpy';
 import styled from 'styled-components';
-import mobileDevelopmentIcon from '../icons/mobile-app.svg';
 import webDevelopmentIcon from '../icons/html.svg';
 import backendIcon from '../icons/computer.svg';
 import { FadeBottom } from '../animations';
@@ -40,11 +39,10 @@ const AboutMe = () => {
             <Col sm={6}>
               <WidthContainer>
                 <AboutMeParagraph tainted>
-                  I'm a Javascript enthusiast and specialized in creating web
-                  applications. During my studies I've already been able to gain
-                  some professional experience. Besides my work as a working
-                  student in different startups I've also worked on various
-                  projects - please take a look down below!
+                  Fullstack Software Engineer with expertise in modern web
+                  technologies, scalable architecture, and DevOps automation.
+                  Passionate about building high-performance applications and
+                  improving system efficiency.
                 </AboutMeParagraph>
               </WidthContainer>
             </Col>
@@ -56,19 +54,6 @@ const AboutMe = () => {
                       <Icon src={webDevelopmentIcon} alt="Web Development" />
                       <Header6>
                         Web
-                        <br />
-                        Development
-                      </Header6>
-                    </WidthContainer>
-                  </Col>
-                  <Col xs={12} sm={4}>
-                    <WidthContainer>
-                      <Icon
-                        src={mobileDevelopmentIcon}
-                        alt="Mobile Development"
-                      />
-                      <Header6>
-                        Mobile
                         <br />
                         Development
                       </Header6>

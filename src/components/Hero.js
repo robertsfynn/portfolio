@@ -76,8 +76,9 @@ const Hero = () => {
                       strings: [
                         'Frontend Developer',
                         'Backend Developer',
-                        'Mobile Developer',
+                        'DevOps Engineer'
                       ],
+                      pauseFor: 800,
                       autoStart: true,
                       loop: true,
                       delay: 100,
